@@ -1,15 +1,16 @@
 @CHARSET "UTF-8";
+
 html  {
   border: 1px solid blue;
   height: 100%;
 }
+
 body {
- 
   height: 100%;
   margin: 0px;
   padding: 0px;
-
 }
+
 .container {
   position: relative;
   border: 1px solid red;
@@ -38,15 +39,16 @@ section {
   padding: 0px 0px;
   min-width: 300px;
 }
+
 #toolbar {
   margin: 10px 0px;
 }
 /* 끝 - 본문 내용 설정 */
 
 /* 오른쪽 편 영역 설정 */
-loginForm {
-  width: 250px;
-  height: 150px;
+joinForm {
+  width: 640px;
+  height: 300px;
   position: absolute;
   top: 51px;
   right: 0px;
@@ -58,6 +60,54 @@ loginForm {
   float: right;
 }
 
+div#topText {
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#imgInput {
+	float: left;
+	width: 280px;
+  text-align: center;
+}
+
+#imgInput img {
+	height: 100px;
+	width: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#imgInput label {
+	display: inline-block;
+  padding: .5em .75em;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #efefef;
+  cursor: pointer;
+  border:2px outset lightgray;
+  border-bottom-color: #efefef;
+  border-radius: .25em;
+}
+
+#imgInput input {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+div#textInput {
+	margin-left: 280px;
+}
+
 div#email {
 	margin: 25px 0px 0px 10px;
 }
@@ -66,18 +116,30 @@ div#password {
   margin: 15px 0px 0px 10px;
 }
 
-div#link {
-	padding-top: 15px;
+div#nickName {
+	margin: 15px 0px 0px 10px;
+}
+
+div#button {
+	padding-top: 35px;
 	height: 50px;
 	text-align: center;
 }
 
 input#input_email {
-	margin: 0px 0px 0px 36px;
+	margin-left: 63px;
 }
 
 input#input_password {
-  margin: 0px 0px 0px 10px;
+  margin-left: 36px;
+}
+
+input#input_nickName {
+  margin-left: 32px;
+}
+
+input#input_password_confirm {
+  margin-left: 5px;
 }
 
 
