@@ -1,7 +1,6 @@
 @CHARSET "UTF-8";
 
 html  {
-  border: 1px solid blue;
   height: 100%;
 }
 
@@ -13,14 +12,12 @@ body {
 
 .container {
   position: relative;
-  border: 1px solid red;
   padding: 0px;
   height: 100%;
 }
 
 /* 헤더 영역 설정 */
 header {
-  border: 1px solid red;
   position: relative;
   height: 7%;
   line-height: 50px;
@@ -147,7 +144,6 @@ input#input_password_confirm {
 
 /* 꼬리말 영역 설정 */
 footer {
-  border: 1px solid red;
   position: relative;
   height: 7%;
   line-height: 50px;
