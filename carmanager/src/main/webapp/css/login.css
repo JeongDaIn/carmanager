@@ -55,25 +55,26 @@ loginForm {
   float: right;
 }
 
-div#email {
-	margin: 25px 0px 0px 10px;
+#email {
+	margin: 25px 0px 0px 15px;
 }
 
-div#password {
-  margin: 15px 0px 0px 10px;
+#password {
+  margin: 15px 0px 0px 15px;
 }
 
-div#link {
+#link {
 	padding-top: 15px;
 	height: 50px;
 	text-align: center;
+	font-size: 15px;
 }
 
-input#input_email {
+#input_email {
 	margin: 0px 0px 0px 36px;
 }
 
-input#input_password {
+#input_password {
   margin: 0px 0px 0px 10px;
 }
 

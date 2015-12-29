@@ -57,14 +57,14 @@ joinForm {
   float: right;
 }
 
-div#topText {
+#topText {
 	font-size: 25px;
 	text-align: center;
 	padding-top: 10px;
 	margin-bottom: 10px;
 }
 
-div#imgInput {
+#imgInput {
 	float: left;
 	width: 280px;
   text-align: center;
@@ -101,41 +101,41 @@ div#imgInput {
   border: 0;
 }
 
-div#textInput {
+#textInput {
 	margin-left: 280px;
 }
 
-div#email {
+#email {
 	margin: 25px 0px 0px 10px;
 }
 
-div#password {
+#password {
   margin: 15px 0px 0px 10px;
 }
 
-div#nickName {
+#nickName {
 	margin: 15px 0px 0px 10px;
 }
 
-div#button {
+#button {
 	padding-top: 35px;
 	height: 50px;
 	text-align: center;
 }
 
-input#input_email {
+#input_email {
 	margin-left: 63px;
 }
 
-input#input_password {
+#input_password {
   margin-left: 36px;
 }
 
-input#input_nickName {
+#input_nickName {
   margin-left: 32px;
 }
 
-input#input_password_confirm {
+#input_password_confirm {
   margin-left: 5px;
 }
 
