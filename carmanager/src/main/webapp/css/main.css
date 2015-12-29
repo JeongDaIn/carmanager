@@ -1,1 +1,39 @@
 @CHARSET "UTF-8";
+
+/** {
+    border: 1px solid red;
+}*/
+
+/*html {
+  height: 100%;
+  margin: 1px;
+  padding:0px;
+  border: 1px solid red;
+}*/
+
+.main {
+  padding: 0px;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin: 0px;
+  background-color: rgb(55, 55, 55);
+  border: 1px solid red;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+view {
+  padding: 0px;
+  position: relative;
+  float: none;
+  margin: 0px;
+}
+
+viewtitle {
+    margin: 0px;
+}
