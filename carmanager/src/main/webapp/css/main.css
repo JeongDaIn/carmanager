@@ -1,39 +1,32 @@
 @CHARSET "UTF-8";
 
-/** {
-    border: 1px solid red;
-}*/
 
-/*html {
+html {
   height: 100%;
-  margin: 1px;
-  padding:0px;
-  border: 1px solid red;
-}*/
-
-.main {
-  padding: 0px;
-  width: 20%;
-  height: 100%;
-  position: relative;
-  float: left;
-  margin: 0px;
-  background-color: rgb(55, 55, 55);
-  border: 1px solid red;
 }
 
 body {
+  height: 100%;
   margin: 0px;
   padding: 0px;
 }
 
-view {
-  padding: 0px;
-  position: relative;
-  float: none;
-  margin: 0px;
+.menubar {
+    height: 100%;
+    position: relative;
+    background: rgb(55, 55, 55);
+    width: 20%;
+    float: left;
+    padding: 0px;
 }
 
-viewtitle {
+.view {
+    height: 100%;
+    background: tan;
     margin: 0px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+	padding: 0;
 }
