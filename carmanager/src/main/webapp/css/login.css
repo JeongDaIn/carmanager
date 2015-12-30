@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+
 html  {
   height: 100%;
 }
@@ -41,26 +42,47 @@ section {
 /* 끝 - 본문 내용 설정 */
 
 /* 오른쪽 편 영역 설정 */
-loginForm {
-  width: 250px;
-  height: 150px;
+form {
+  width: 300px;
+  height: 220px;
   position: absolute;
-  top: 51px;
-  right: 0px;
+  top: 30%;
+  left: 38%;
  
-  margin: 100px 20px;
-  
-  background-color: white;
   /*background-color: #59f;*/
-  float: right;
+  float: left;
+  /* border: 1px solid red; */
 }
 
 #email {
-	margin: 25px 0px 0px 15px;
+	margin: 25px 0 0 30px;
 }
 
 #password {
-  margin: 15px 0px 0px 15px;
+  margin: 15px 0 0 30px;
+}
+
+.form-control {
+	width: 88%
+}
+
+#label {
+	font-weight: bold;
+	font-size:15px;
+	color:white;
+  text-align:center;
+}
+
+label:hover { 
+	background-color: Highlight; 
+	color: HighlightText; 
+}
+
+A:hover {
+	color:white; 
+	background-color: Highlight;
+	color: HighlightText; 
+	text-decoration:underline;
 }
 
 #link {
@@ -68,27 +90,19 @@ loginForm {
 	height: 50px;
 	text-align: center;
 	font-size: 15px;
+	color: white;
 }
 
-#input_email {
-	margin: 0px 0px 0px 36px;
+.link {
+  text-decoration:none;
+  font-size:15px;
+  font-weight: bold;
+  height:20px;
+  width:60px;
+  display:inline-block;
+  padding-top:2px;
+  color:white;
+  text-align:center;
 }
-
-#input_password {
-  margin: 0px 0px 0px 10px;
-}
-
 
 /* 끝 - 오른쪽 편 영역 설정 */
-
-/* 꼬리말 영역 설정 */
-footer {
-  position: relative;
-  height: 7%;
-  line-height: 50px;
-  background-color: white;
-  color: black;
-  min-width: 600px;
-  margin: 0px;
-}
-/* 끝 - 꼬리말 영역 설정 */

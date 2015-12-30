@@ -3,12 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<!-- 외부 오픈 소스 CSS 라이브러리 사용하기  -->
 
-<link rel="stylesheet" 
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
- crossorigin="anonymous">
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../css/login.css">
 
 </head>
@@ -19,25 +15,25 @@ integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkz
  <section>
     <img id="car" src="../img/car.jpg" width="100%" height="100%">
   </section>
-  <loginForm>
-    <div id="preview">
+  <form>
+    <div id="preview" class="form-group">
       <div id="email">
-        email
-        <input id="input_email" type="text" size="15">
+        <input id="input_email" class="form-control" type="text" placeholder="이메일">
       </div>
-      <div id="password">
-        password
-        <input id="input_password" type="password" size="15">
+      <div id="password" class="form-group">
+        <input id="input_password" class="form-control" type="password" placeholder="비밀번호">
+      </div>
+      <div id="label">
+        <input id="check" type="checkbox">
+        <label for="check">이메일 저장</label>
       </div>
       <div id="link">
-        <a href="../main/main.html">로그인</a> / <a href="join.html">회원가입</a>
+        <a class="link" href="../main/main.html">로그인</a> / <a class="link" href="join.html"> 회원가입</a>
       </div>
     </div>
-  </loginForm>
-  <footer>
-    <address>서울 서초구 비트 캠프</address>
-  </footer>
+  </form>
   </div>
   <script type="text/javascript" src="login.js"></script>
+  <script type="text/javascript" src="../lib/jquery/jquery.js"></script>
 </body>
 </html>
