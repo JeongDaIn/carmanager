@@ -16,19 +16,6 @@ body {
   height: 100%;
 }
 
-/* 헤더 영역 설정 */
-header {
-  position: relative;
-  height: 7%;
-  line-height: 50px;
-  background-color: white;
-  color: black;
-  min-width: 600px;
-  margin: 0px;
-}
-
-/* 끝 - 헤더 영역 설정 */
-
 /* 본문 내용 설정 */
 section {
   /*margin: 0 181px 0 181px;*/
