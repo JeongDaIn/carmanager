@@ -1,8 +1,9 @@
 @CHARSET "UTF-8";
 
-
 html {
   height: 100%;
+  background: whitesmoke;
+  min-height: 650px;
 }
 
 body {
@@ -11,22 +12,62 @@ body {
   padding: 0px;
 }
 
-.menubar {
-    height: 100%;
-    position: relative;
-    background: rgb(55, 55, 55);
-    width: 20%;
-    float: left;
-    padding: 0px;
-}
-
-.view {
-    height: 100%;
-    background: WhiteSmoke;
-    margin: 0px;
-}
-
 h1, h2, h3, p {
     margin: 0;
 	padding: 0;
+}
+
+.menubar {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 20%;
+    height: 100%;
+    min-height: 650px;
+    background: rgb(55, 55, 55);
+}
+
+.view {
+    position: page;
+    height: 100%;
+    min-height: 650px;
+}
+
+.selectcar {
+    border: 1px solid red;
+    position: absolute;
+    float: left;
+    left: 25%;
+    top: 2.5%;
+    margin: 0px;
+}
+
+.averoil {
+    border: 1px solid red;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+}
+
+.effi {
+    border: 1px solid red;
+    position: absolute;
+    top: 10%;
+    left: 46%;
+}
+
+.buyoil {
+    border: 1px solid red;
+    position: absolute;
+    top: 10%; 
+    left: 72%;
+}
+
+.carcondition {
+    border: 1px solid red;
+    position: absolute;
+    left: 46%;
+    bottom: 35%;
 }
