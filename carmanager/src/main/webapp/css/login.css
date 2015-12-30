@@ -42,37 +42,55 @@ section {
 /* 끝 - 본문 내용 설정 */
 
 /* 오른쪽 편 영역 설정 */
-loginForm {
-  width: 250px;
-  height: 150px;
+form {
+  width: 300px;
+  height: 220px;
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 38%;
  
   /*background-color: #59f;*/
   float: left;
-  border: 1px solid red;
-}
-
-input {
-	height: 35px; 
+  /* border: 1px solid red; */
 }
 
 #email {
-	margin: 25px 0px 0px 15px;
+	margin: 25px 0 0 30px;
 }
 
 #password {
-  margin: 15px 0px 0px 15px;
+  margin: 15px 0 0 30px;
 }
 
-A:hover  {color:white; text-decoration:underline; }
+.form-control {
+	width: 88%
+}
+
+#label {
+	font-weight: bold;
+	font-size:15px;
+	color:white;
+  text-align:center;
+}
+
+label:hover { 
+	background-color: Highlight; 
+	color: HighlightText; 
+}
+
+A:hover {
+	color:white; 
+	background-color: Highlight;
+	color: HighlightText; 
+	text-decoration:underline;
+}
 
 #link {
 	padding-top: 15px;
 	height: 50px;
 	text-align: center;
 	font-size: 15px;
+	color: white;
 }
 
 .link {
@@ -86,15 +104,6 @@ A:hover  {color:white; text-decoration:underline; }
   color:white;
   text-align:center;
 }
-
-#input_email {
-	margin-left: 40px;
-}
-
-#input_password {
-  margin-left: 40px;
-}
-
 
 /* 끝 - 오른쪽 편 영역 설정 */
 
