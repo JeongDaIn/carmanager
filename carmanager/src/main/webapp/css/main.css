@@ -35,6 +35,59 @@ h1, h2, h3, p {
     min-height: 650px;
 }
 
+/* 로고 관련 */
+.logoview {
+  height: 25%; 
+  text-align: center; 
+  border: 1px solid red;
+}
+
+.logo {
+  margin-top: 30%;
+  border: 1px solid blue;
+}
+
+
+
+/*유저정보*/
+.userinfoview {
+  height: 20%; 
+  text-align: center;
+  border: 1px solid red;
+  font-size: smaller;
+}
+
+.useremail {
+}
+
+.userlogout {  
+}
+
+
+
+/* 메뉴 바 */
+.menuview {
+  height: 40%;
+  text-align: center;
+  border: 1px solid red;        
+}
+
+
+
+/* copyright 부분  */
+.footerview {
+  height: 15%;
+  text-align: center;
+  border: 1px solid red;      
+}
+
+.footer {
+  margin-top: 10%;
+  font-size: small; 
+}
+
+
+
 .selectcar {
     border: 1px solid red;
     position: absolute;
