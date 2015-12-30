@@ -106,15 +106,3 @@ A:hover {
 }
 
 /* 끝 - 오른쪽 편 영역 설정 */
-
-/* 꼬리말 영역 설정 */
-footer {
-  position: relative;
-  height: 7%;
-  line-height: 50px;
-  background-color: white;
-  color: black;
-  min-width: 600px;
-  margin: 0px;
-}
-/* 끝 - 꼬리말 영역 설정 */

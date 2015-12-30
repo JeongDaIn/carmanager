@@ -4,10 +4,7 @@
 <meta charset="UTF-8">
 <title>회원가입</title>
 
-<link rel="stylesheet" 
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
- crossorigin="anonymous">
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../css/join.css">
 
 </head>
@@ -18,40 +15,44 @@ integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkz
  <section>
     <img id="car" src="../img/car.jpg" width="100%" height="100%">
   </section>
-  <joinForm>
-  <div id="topText">회원가입</div>  
+  <form class="form-inline">
+    <div id="topText">회원가입</div>  
     <div id="imgInput">
       <img src="exam.png"><br>
       <label for="fileInput">사진 등록</label>
       <input type="file" id="fileInput">
     </div>  
-    <div id="textInput">
+    <div id="textInput" class="form-group">
       <div id="email">
-        Email : 
-        <input id="input_email" type="text" size="15">
-        <button>중복체크</button>
+        <label for="input_email">Email :</label> 
+        <input id="input_email" class="form-control" type="text" size="15">
+        <input type="button" id="check" class="btn btn-default" value="중복체크">
       </div>
       <div id="nickName">
-        NickName : 
-        <input id="input_nickName" type="nickName" size="15">
+        <label for="input_nickName">NickName :</label> 
+        <input id="input_nickName" class="form-control" type="text" size="15">
       </div>
       <div id="password">
-        Password : 
-        <input id="input_password" type="password" size="15">
+        <label for="input_password">Password :</label> 
+        <input id="input_password" class="form-control" type="password" size="15">
       </div>
         <div id="password">
-        Password 확인 : 
-        <input id="input_password_confirm" type="password" size="15">
+        <label for="input_password_confirm">Password 확인 :</label> 
+        <input id="input_password_confirm" class="form-control" type="password" size="15">
       </div>
     </div>
     <div id="button">
-      <button>가입</button> <button>취소</button>
+      <input type="button" class="btn btn-default" onclick="go()" value="가입">
+      <input type="button" class="btn btn-default" onclick="go()" value="취소">
     </div>
-  </joinForm>
-  <footer>
-    <address>서울 서초구 비트 캠프</address>
-  </footer>
+  </form>
   </div>
   <script type="text/javascript" src="login.js"></script>
+  <script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+  <script>
+  function go() {
+  	window.location.href="login.html";
+  }
+  </script>
 </body>
 </html>

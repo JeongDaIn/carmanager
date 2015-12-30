@@ -43,16 +43,14 @@ section {
 /* 끝 - 본문 내용 설정 */
 
 /* 오른쪽 편 영역 설정 */
-joinForm {
-  width: 640px;
+form {
+  width: 670px;
   height: 300px;
   position: absolute;
-  top: 51px;
-  right: 0px;
+  top: 28%;
+  left: 21.5%;
  
-  margin: 100px 20px;
-  
-  background-color: white;
+  background-color: lightgray;
   /*background-color: #59f;*/
   float: right;
 }
@@ -83,7 +81,7 @@ joinForm {
   font-size: inherit;
   line-height: normal;
   vertical-align: middle;
-  background-color: #efefef;
+  background-color: white;
   cursor: pointer;
   border:2px outset lightgray;
   border-bottom-color: #efefef;
@@ -101,38 +99,31 @@ joinForm {
   border: 0;
 }
 
-#textInput {
-	margin-left: 280px;
+.form-group input {
+	margin-top : 10px;
 }
 
-#email {
-	margin: 25px 0px 0px 10px;
-}
-
-#password {
-  margin: 15px 0px 0px 10px;
-}
-
-#nickName {
-	margin: 15px 0px 0px 10px;
+#check {
+	margin-top: 7px;
 }
 
 #button {
-	padding-top: 35px;
+	padding-top: 25px;
 	height: 50px;
 	text-align: center;
 }
 
-#input_email {
-	margin-left: 63px;
-}
 
-#input_password {
-  margin-left: 36px;
+#input_email {
+	margin-left: 66px;
 }
 
 #input_nickName {
-  margin-left: 32px;
+  margin-left: 36px;
+}
+
+#input_password {
+  margin-left: 37px;
 }
 
 #input_password_confirm {
@@ -141,15 +132,3 @@ joinForm {
 
 
 /* 끝 - 오른쪽 편 영역 설정 */
-
-/* 꼬리말 영역 설정 */
-footer {
-  position: relative;
-  height: 7%;
-  line-height: 50px;
-  background-color: white;
-  color: black;
-  min-width: 600px;
-  margin: 0px;
-}
-/* 끝 - 꼬리말 영역 설정 */
