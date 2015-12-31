@@ -47,9 +47,22 @@ section {
   position: absolute;
   top: 28.4%;
   right: 5%;
- 
+  
   float: left;
   /* border: 1px solid red; */
+}
+
+#null {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 28.4%;
+  right: 5%;
+  
+  background-color: gray;
+  opacity: 0.7;
+  
+  float: left;
 }
 
 #email {

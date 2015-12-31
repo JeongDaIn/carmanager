@@ -50,6 +50,18 @@ section {
   float: right;
 }
 
+#null {
+  width: 430px;
+  height: 300px;
+  position: absolute;
+  top: 28.4%;
+  right: 5%;
+ 
+  background-color: gray;
+  opacity: 0.7;
+  float: right;
+}
+
 #topText {
 	font-size: 25px;
 	text-align: center;
