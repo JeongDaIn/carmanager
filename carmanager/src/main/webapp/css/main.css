@@ -47,8 +47,6 @@ h1, h2, h3, p {
   border: 1px solid blue;
 }
 
-
-
 /*유저정보*/
 .userinfoview {
   height: 20%; 
@@ -58,6 +56,7 @@ h1, h2, h3, p {
 }
 
 .useremail {
+  
 }
 
 .userlogout {  
@@ -78,34 +77,40 @@ h1, h2, h3, p {
   list-style: none;
 }
 
+.menuview ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .menuview a {
-  /*background: #333;*/
   border-bottom: 1px solid #393939;
   color: #ccc;
   display: block;
-  /*margin: 0;*/
   padding: 8px 12px;
   text-decoration: none;
-  /*font-weight: normal;*/
 }
 
 .menuview a:hover {
-  background: #2580a2 url("images/hover.gif") left center no-repeat;
+  background: #2580a2;
   color: #fff;
-  /*padding-bottom: 8px;*/
 }
 
-
 /* copyright 부분  */
-.footerview {
+.footerwrapper {
   height: 15%;
-  text-align: center;
-  border: 1px solid red;      
+  width: 100%;
+  display: table;
+  border: 1px solid red;
+}
+
+.footerview {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .footer {
-  margin-top: 10%;
-  font-size: small; 
+  font-size: small;
 }
 
 
