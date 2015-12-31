@@ -2,7 +2,7 @@
 
 html {
   height: 100%;
-  background: whitesmoke;
+  background: rgb(245, 252, 243);
   min-height: 650px;
 }
 
@@ -26,7 +26,8 @@ h1, h2, h3, p {
     width: 20%;
     height: 100%;
     min-height: 650px;
-    background: rgb(55, 55, 55);
+    background: whitesmoke;
+    border-right: 1px solid gainsboro;
 }
 
 .view {
@@ -88,8 +89,8 @@ h1, h2, h3, p {
 }
 
 .menuview a {
-  border-bottom: 1px solid #393939;
-  color: #ccc;
+  /*border-bottom: 1px solid #393939;*/
+  color: slategray;
   display: block;
   padding: 13px 12px;
   text-decoration: none;
