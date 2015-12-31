@@ -24,7 +24,6 @@ section {
   /*margin: 0 181px 0 181px;*/
   height: 100%;
   padding: 0px 0px;
-	border: 1px solid green;
 }
 /* 끝 - 본문 내용 설정 */
 
@@ -33,7 +32,7 @@ section {
   width: 300px;
   height: 220px;
   position: absolute;
-  top: 30%;
+  top: 28.4%;
   left: 5%;
   font-weight: bold;
   font-size: 20px;
@@ -46,12 +45,24 @@ section {
   width: 300px;
   height: 300px;
   position: absolute;
-  top: 30%;
+  top: 28.4%;
   right: 5%;
- 
-  background-color: lightgray;
+  
   float: left;
   /* border: 1px solid red; */
+}
+
+#null {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 28.4%;
+  right: 5%;
+  
+  background-color: gray;
+  opacity: 0.7;
+  
+  float: left;
 }
 
 #email {
@@ -67,9 +78,11 @@ section {
 }
 
 #label {
+  margin-top: 10px;
 	font-weight: bold;
 	font-size:15px;
   text-align:center;
+  color: white;
 }
 
 label:hover { 
@@ -89,6 +102,8 @@ A:hover {
 	height: 50px;
 	text-align: center;
 	font-size: 15px;
+  color: white;
+  font-weight: bold;
 }
 
 .link {
@@ -100,6 +115,7 @@ A:hover {
   display:inline-block;
   padding-top:2px;
   text-align:center;
+  color: white;
 }
 
 /* 끝 - 오른쪽 편 영역 설정 */
