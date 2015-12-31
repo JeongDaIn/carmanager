@@ -36,39 +36,43 @@ h1, h2, h3, p {
 }
 
 /* 로고 관련 */
-.logoview {
-  height: 25%; 
-  text-align: center; 
-  border: 1px solid red;
+.logowrapper {
+  height: 30%;
+  width: 100%;
+  display: table; 
 }
 
-.logo {
-  margin-top: 30%;
-  border: 1px solid blue;
+.logoview {
+  text-align: center; 
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /*유저정보*/
+.userinfowrapper {
+  height: 10%;
+  width: 100%;
+  display: table;
+}
+
 .userinfoview {
-  height: 20%; 
   text-align: center;
-  border: 1px solid red;
   font-size: smaller;
+  display: table-cell;
+  vertical-align: middle;
 }
-
-.useremail {
-  
-}
-
-.userlogout {  
-}
-
-
 
 /* 메뉴 바 */
+.menuwrapper {
+  height: 45%;    
+  width: 100%;
+  display: table;
+}
+
 .menuview {
-  height: 40%;
   text-align: center;
-  border: 1px solid red;        
+  display: table-cell;
+  vertical-align: middle;    
 }
 
 .menuview li {
@@ -87,12 +91,12 @@ h1, h2, h3, p {
   border-bottom: 1px solid #393939;
   color: #ccc;
   display: block;
-  padding: 8px 12px;
+  padding: 13px 12px;
   text-decoration: none;
 }
 
 .menuview a:hover {
-  background: #2580a2;
+  background: rgb(83, -66, -67);
   color: #fff;
 }
 
@@ -101,15 +105,12 @@ h1, h2, h3, p {
   height: 15%;
   width: 100%;
   display: table;
-  border: 1px solid red;
 }
 
 .footerview {
+  text-align: center;
   display: table-cell;
   vertical-align: middle;
-}
-
-.footer {
   font-size: small;
 }
 
