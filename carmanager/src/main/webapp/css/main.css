@@ -2,7 +2,8 @@
 
 html {
   height: 100%;
-  background: rgb(245, 252, 243);
+  background: whitesmoke;
+  /*background: rgb(245, 252, 243);*/
   min-height: 650px;
 }
 
@@ -98,7 +99,8 @@ h1, h2, h3, p {
 }
 
 .menuview a:hover {
-  background: rgb(92, 178, 171);
+  background: rgb(55, 55, 55);  
+  /*background: rgb(92, 178, 171);*/
   color: #fff;
 }
 
