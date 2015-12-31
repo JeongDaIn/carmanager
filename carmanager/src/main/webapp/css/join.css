@@ -22,20 +22,30 @@ section {
   height: 86%;
   padding: 0px 0px;
   min-width: 300px;
+  border: 1px solid red;
 }
 
-#toolbar {
-  margin: 10px 0px;
-}
 /* 끝 - 본문 내용 설정 */
 
 /* 오른쪽 편 영역 설정 */
-form {
-  width: 670px;
+#mainText {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  border: 1px solid red;
+}
+
+#join {
+  width: 530px;
   height: 300px;
   position: absolute;
   top: 28%;
-  left: 21.5%;
+  right: 5%;
  
   background-color: lightgray;
   /*background-color: #59f;*/
@@ -51,7 +61,7 @@ form {
 
 #imgInput {
 	float: left;
-	width: 280px;
+	width: 200px;
   text-align: center;
 }
 
@@ -105,15 +115,15 @@ form {
 }
 
 #input_nickName {
-  margin-left: 36px;
+  margin-left: 66px;
 }
 
 #input_password {
-  margin-left: 37px;
+  margin-left: 66px;
 }
 
 #input_password_confirm {
-  margin-left: 5px;
+  margin-left: 66px;
 }
 
 
