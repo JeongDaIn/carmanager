@@ -11,32 +11,31 @@
 <body>
   <div id="main" class="container">
   <section>
-    <img id="car" src="../img/car.jpg" width="100%" height="100%">
   </section>
-  <form class="form-inline">
+  <div id="mainText">
+    <p>오호라~<p>
+    <p>우리들의 Car' Manager!!!<p>
+  </div>
+  <form id="join" class="form-inline">
     <div id="topText">회원가입</div>  
     <div id="imgInput">
       <img src="../img/exam.png" class="img-thumbnail"><br>
       <label for="fileInput">사진 등록</label>
       <input type="file" id="fileInput">
-    </div>  
+    </div>
     <div id="textInput" class="form-group">
       <div id="email">
-        <label for="input_email">Email :</label> 
-        <input id="input_email" class="form-control" type="text" size="15">
+        <input id="input_email" class="form-control" type="text" size="15" placeholder="Email">
         <input type="button" id="check" class="btn btn-default" value="중복체크">
       </div>
       <div id="nickName">
-        <label for="input_nickName">NickName :</label> 
-        <input id="input_nickName" class="form-control" type="text" size="15">
+        <input id="input_nickName" class="form-control" type="text" size="15" placeholder="NickName">
       </div>
       <div id="password">
-        <label for="input_password">Password :</label> 
-        <input id="input_password" class="form-control" type="password" size="15">
+        <input id="input_password" class="form-control" type="password" size="15" placeholder="Password">
       </div>
         <div id="password">
-        <label for="input_password_confirm">Password 확인 :</label> 
-        <input id="input_password_confirm" class="form-control" type="password" size="15">
+        <input id="input_password_confirm" class="form-control" type="password" size="15" placeholder="Password 확인">
       </div>
     </div>
     <div id="button">
@@ -47,7 +46,20 @@
   </div>
   <script type="text/javascript" src="login.js"></script>
   <script type="text/javascript" src="../lib/jquery/jquery.js"></script>
-  <script>
+  <script type="text/javascript" src="../js/background.cycle.js"></script>
+  <script type="text/javascript" src="../js/cycle.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
   function go() {
   	window.location.href="login.html";
   }
