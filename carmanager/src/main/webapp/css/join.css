@@ -41,7 +41,7 @@ section {
 }
 
 #join {
-  width: 530px;
+  width: 430px;
   height: 300px;
   position: absolute;
   top: 28%;
@@ -61,7 +61,7 @@ section {
 
 #imgInput {
 	float: left;
-	width: 200px;
+	width: 150px;
   text-align: center;
 }
 
@@ -96,6 +96,10 @@ section {
   border: 0;
 }
 
+#textInput {
+  width: 280px;
+}
+
 .form-group input {
 	margin-top : 10px;
 }
@@ -111,19 +115,19 @@ section {
 }
 
 #input_email {
-	margin-left: 66px;
+	margin-left: 20px;
 }
 
 #input_nickName {
-  margin-left: 66px;
+  margin-left: 20px;
 }
 
 #input_password {
-  margin-left: 66px;
+  margin-left: 20px;
 }
 
 #input_password_confirm {
-  margin-left: 66px;
+  margin-left: 20px;
 }
 
 
