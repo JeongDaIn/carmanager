@@ -2,7 +2,6 @@
 
 html  {
   height: 100%;
-  border: 1px solid blue;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   padding: 0px;
   width: 100%;
   height: 86%;
-  border: 1px solid yellow;
 }
 
 /* 본문 내용 설정 */
@@ -25,7 +23,6 @@ section {
   height: 100%;
   padding: 0px 0px;
   min-width: 300px;
-  border: 1px solid green;
 }
 
 /* 끝 - 본문 내용 설정 */
@@ -136,14 +133,12 @@ section {
 
 /* 끝 - 오른쪽 편 영역 설정 */
 header {
-  border: 1px solid red;
   width: 100%;
   height: 7%;
   position: relative;
   color: white;
 }
 footer {
-	border: 1px solid red;
   width: 100%;
   height: 7%;
   position: relative;
