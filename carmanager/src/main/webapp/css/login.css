@@ -21,22 +21,33 @@ section {
   /*margin: 0 181px 0 181px;*/
   height: 86%;
   padding: 0px 0px;
-  min-width: 300px;
-}
-#toolbar {
-  margin: 10px 0px;
+  width: 100%;
+  border: 1px solid red;
 }
 /* 끝 - 본문 내용 설정 */
 
-/* 오른쪽 편 영역 설정 */
-form {
+/* 왼쪽 텍스트 영역 설정 */
+#mainText {
   width: 300px;
   height: 220px;
   position: absolute;
   top: 30%;
-  left: 38%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  border: 1px solid red;
+}
+
+/* 오른쪽 로그인 영역 설정 */
+#login {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  right: 5%;
  
-  /*background-color: #59f;*/
+  background-color: lightgray;
   float: left;
   /* border: 1px solid red; */
 }
@@ -46,7 +57,7 @@ form {
 }
 
 #password {
-  margin: 15px 0 0 30px;
+  margin: 30px 0 0 30px;
 }
 
 .form-control {
@@ -56,7 +67,6 @@ form {
 #label {
 	font-weight: bold;
 	font-size:15px;
-	color:white;
   text-align:center;
 }
 
@@ -77,7 +87,6 @@ A:hover {
 	height: 50px;
 	text-align: center;
 	font-size: 15px;
-	color: white;
 }
 
 .link {
@@ -88,7 +97,6 @@ A:hover {
   width:60px;
   display:inline-block;
   padding-top:2px;
-  color:white;
   text-align:center;
 }
 
