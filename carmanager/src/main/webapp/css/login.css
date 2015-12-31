@@ -33,7 +33,7 @@ section {
   width: 300px;
   height: 220px;
   position: absolute;
-  top: 30%;
+  top: 28.4%;
   left: 5%;
   font-weight: bold;
   font-size: 20px;
@@ -46,10 +46,9 @@ section {
   width: 300px;
   height: 300px;
   position: absolute;
-  top: 29.2%;
+  top: 28.4%;
   right: 5%;
  
-  background-color: lightgray;
   float: left;
   /* border: 1px solid red; */
 }
@@ -67,9 +66,11 @@ section {
 }
 
 #label {
+  margin-top: 10px;
 	font-weight: bold;
 	font-size:15px;
   text-align:center;
+  color: white;
 }
 
 label:hover { 
@@ -89,6 +90,7 @@ A:hover {
 	height: 50px;
 	text-align: center;
 	font-size: 15px;
+  color: white;
 }
 
 .link {
@@ -100,6 +102,7 @@ A:hover {
   display:inline-block;
   padding-top:2px;
   text-align:center;
+  color: white;
 }
 
 /* 끝 - 오른쪽 편 영역 설정 */

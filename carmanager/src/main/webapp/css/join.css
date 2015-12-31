@@ -35,22 +35,20 @@ section {
   width: 300px;
   height: 220px;
   position: absolute;
-  top: 28%;
+  top: 28.4%;
   left: 5%;
   font-weight: bold;
   font-size: 20px;
   color: blue;
-  border: 1px solid red;
 }
 
 #join {
   width: 430px;
   height: 300px;
   position: absolute;
-  top: 23.7%;
+  top: 28.4%;
   right: 5%;
  
-  background-color: lightgray;
   /*background-color: #59f;*/
   float: right;
 }
@@ -60,6 +58,8 @@ section {
 	text-align: center;
 	padding-top: 10px;
 	margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
 }
 
 #imgInput {
