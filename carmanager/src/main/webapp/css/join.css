@@ -43,7 +43,7 @@ section {
   width: 430px;
   height: 300px;
   position: absolute;
-  top: 28.4%;
+  top: 23%;
   right: 5%;
  
   /*background-color: #59f;*/
@@ -52,12 +52,12 @@ section {
 
 #null {
   width: 430px;
-  height: 300px;
+  height: 400px;
   position: absolute;
-  top: 28.4%;
+  top: 17%;
   right: 5%;
  
-  background-color: gray;
+  background-color: black;
   opacity: 0.7;
   float: right;
 }
@@ -117,7 +117,7 @@ section {
 }
 
 #check {
-	margin-top: 7px;
+	margin-top: 0.5px;
 }
 
 #button {
@@ -128,14 +128,17 @@ section {
 
 #input_email {
 	margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #input_nickName {
   margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 #input_password {
   margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 #input_password_confirm {
