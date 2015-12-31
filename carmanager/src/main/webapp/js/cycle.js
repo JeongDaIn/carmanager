@@ -2,8 +2,9 @@
 $(document).ready(function() {
   $("section").backgroundCycle({
     imageUrls: [
-                '../img/car.jpg',
-                '../img/car.jpeg'
+                '../img/car01.jpg',
+                '../img/car02.jpeg',
+                '../img/car03.jpg'
                 ],
                 fadeSpeed: 2000,
                 duration: 5000,
