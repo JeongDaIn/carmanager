@@ -127,7 +127,7 @@ h1, h2, h3, p {
     border: 1px solid red;
     position: absolute;
     float: left;
-    left: 25%;
+    left: 300px;
     top: 2.5%;
     margin: 0px;
 }
@@ -135,8 +135,8 @@ h1, h2, h3, p {
 .averoil {
     border: 1px solid red;
     position: absolute;
-    top: 10%;
-    left: 21%;
+    top: 70px;
+    left: 280px;
     margin: 0px;
     padding: 0px;
 }
@@ -144,28 +144,29 @@ h1, h2, h3, p {
 .effi {
     border: 1px solid red;
     position: absolute;
-    top: 10%;
-    left: 62%;
+    top: 70px;
+    left: 800px;
 }
 
 .viewintitle {
     border: 1px solid red;
     position: absolute;
-    top: 55%;
-    left: 21%;       
+    top: 410px;
+    left: 280px;      
 }
 
 .buyoil {
     border: 1px solid red;
     position: absolute;
-    top: 55%; 
-    left: 62%;
+    top: 410px;
+    left: 800px;
 }
+
 
 .carcondition {
     border: 1px solid red;
     position: absolute;
-    left: 46%;
-    top: 92%;
+    left: 280px;
+    top: 750px;
 }
 /* view 부분 끝 */
