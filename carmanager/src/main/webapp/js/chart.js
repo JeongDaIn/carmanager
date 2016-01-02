@@ -46,7 +46,7 @@ config4.waveHeightScaling = false;
 config4.waveOffset = 0.25;
 config4.textSize = 0.75;
 config4.waveCount = 3;
-var gauge5 = loadLiquidFillGauge("fillgauge5", 60.44, config4);
+var gauge5 = loadLiquidFillGauge("fillgauge5", 6.1, config4);
 
 var config5 = liquidFillGaugeDefaultSettings();
 config5.circleThickness = 0.4;
