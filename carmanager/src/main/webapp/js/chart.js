@@ -30,8 +30,8 @@ config3.waveOffset = 0.25;
 config3.valueCountUp = false;
 config3.displayPercent = false;
 var gauge4 = loadLiquidFillGauge("fillgauge4", 50, config3);
-var config4 = liquidFillGaugeDefaultSettings();
 
+var config4 = liquidFillGaugeDefaultSettings();
 config4.circleThickness = 0.1;
 config4.circleColor = "#008610";
 config4.textColor = "#187222";
