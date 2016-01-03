@@ -38,6 +38,7 @@ h1, h2, h3, p {
     position: page;
     height: 100%;
     min-height: 650px;
+    font-family: 'Jeju Gothic', sans-serif;
 }
 
 /* 로고 관련 */
@@ -98,7 +99,7 @@ h1, h2, h3, p {
   display: block;
   padding: 13px 12px;
   text-decoration: none;
-      font-family: 'Jeju Gothic', sans-serif;
+  font-family: 'Jeju Gothic', sans-serif;
 }
 
 .menuview a:hover {
@@ -155,7 +156,13 @@ h1, h2, h3, p {
     position: absolute;
     top: 410px;
     left: 280px; 
-    z-index: 10;     
+    z-index: 10;
+}
+
+.titlemsg {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-shadow: whitesmoke 0px 0px 5px;
 }
 
 .viewinslide {

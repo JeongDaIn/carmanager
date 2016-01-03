@@ -29,15 +29,22 @@ section {
 
 /* 왼쪽 텍스트 영역 설정 */
 #mainText {
-  width: 300px;
+  width: 500px;
   height: 220px;
   position: absolute;
-  top: 28.4%;
-  left: 5%;
-  font-weight: bold;
-  font-size: 20px;
-  color: blue;
+  top: 32%;
+  left: 10%;
+  font-weight: lighter;
+  font-size: 40px;
+  color: antiquewhite;
+  text-shadow: darkgray 1px 1px 10px;
+  font-family: sans-serif;
   /*border: 1px solid red;*/
+}
+
+.intext {
+    font-size: 42px;
+    font-weight: bolder;
 }
 
 /* 오른쪽 로그인 영역 설정 */
