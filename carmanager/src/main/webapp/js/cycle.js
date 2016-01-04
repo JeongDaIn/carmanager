@@ -9,8 +9,8 @@ $(document).ready(function() {
                 '../img/image002.jpg',
                 '../img/image020.jpeg'
                 ],
-                fadeSpeed: 2000, //2000
                 duration: 5000,  //5000
+                fadeSpeed: 2000, //2000
                 backgroundSize: SCALING_MODE_COVER
   });
 });
