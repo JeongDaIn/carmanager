@@ -5,6 +5,7 @@
 <title>login</title>
 <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -30,7 +31,8 @@
   <section>
   </section>
   <form id="null"></form>
-  <form id="login">
+  <!--
+    <form id="login">
     <div id="preview" class="form-group">
       <div id="email">
         <input id="input_email" class="form-control" type="text" placeholder="이메일">
@@ -47,6 +49,33 @@
       </div> 
     </div>
   </form>
+  -->
+  
+  <form class="form-4">
+    <h1>로그인</h1>
+    <p>
+        <label for="login">Email</label>
+        <input type="text" name="login" placeholder="Email" required>
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name='password' placeholder="Password" required> 
+    </p>
+
+    <div>
+      <input type="checkbox" id="check">
+      이메일 저장
+      <span id="goJoin">
+        <a href="join.html">회원가입</a>
+      </span>
+    </div>
+    
+    <p></p>
+
+    <p>
+      <input type="button" value="Log-in" onclick="goMain()">
+    </p>       
+  </form>
   
   </div>
   <!-- <footer></footer> -->
@@ -55,6 +84,8 @@
   <script type="text/javascript" src="../js/background.cycle.js"></script>
   <script type="text/javascript" src="../js/cycle2.js"></script>
   <script type="text/javascript" src="../js/cycle.js"></script>
+  <script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="../js/modernizr.custom.63321.js"></script>
   <script type="text/javascript">
   
   var _gaq = _gaq || [];
@@ -71,6 +102,7 @@
   function goMain() {
   		window.location.href="../main/main.html";
   }
+  
 </script> 
 </body>
 </html>
