@@ -6,8 +6,6 @@
 <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../css/example.css">
 <link rel="stylesheet" href="../css/login.css">
-<link rel="stylesheet" href="../css/demo.css">
-<link rel="stylesheet" href="../css/font-awesome.css">
 <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -65,7 +63,7 @@
         <label for="remember">Remember me</label>
     </p>
     <p class="clearfix">
-        <input type="submit" name="submit" value="Sign in">
+        <input type="button" name="submit" value="Sign in" onclick="goMain()">
     </p>       
   </form>
   
@@ -90,6 +88,10 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
+  function goMain() {
+  		window.location.href="../main/main.html";
+  }
 </script> 
 </body>
 </html>

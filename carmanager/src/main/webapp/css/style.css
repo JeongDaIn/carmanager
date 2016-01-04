@@ -1,5 +1,5 @@
 @import url('demo.css');
-@import url('../font/font-awesome.css');
+@import url('font-awesome.css');
 
 /* GLOBALS */
 
@@ -27,9 +27,10 @@
     font-family: 'Ubuntu', 'Lato', sans-serif;
     font-weight: 400;
     /* Size and position */
-    width: 500px;
-    position: relative;
-    margin: 60px auto 30px;
+    width: 450px;
+    position: absolute;
+    top: 34%;
+    right: 5%;
     padding: 10px;
     overflow: hidden;
 
@@ -124,7 +125,7 @@
     vertical-align: middle;
 }
 
-.form-3 input[type=submit] {
+.form-3 input[type=button] {
     /* Width and position */
     width: 100%;
     padding: 8px 5px;

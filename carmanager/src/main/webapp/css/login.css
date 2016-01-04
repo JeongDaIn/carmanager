@@ -80,17 +80,19 @@ section {
 }
 
 /* 오른쪽 로그인 영역 설정 */
+
+/*
 #login {
   width: 300px;
-  height: 300px;
+  height: 100px;
   position: absolute;
   top: 28.4%;
   right: 5%;
   
   float: left;
-  /* border: 1px solid red; */
-}
+}*/
 
+/*
 #null {
   width: 300px;
   height: 400px;
@@ -102,15 +104,15 @@ section {
   opacity: 0.7;
   
   float: left;
-}
+}*/
 
-#email {
+/*#email {
 	margin: 25px 0 0 30px;
 }
 
 #password {
   margin: 30px 0 0 30px;
-}
+}*/
 
 .form-control {
 	width: 88%
