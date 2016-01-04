@@ -1,9 +1,10 @@
 @CHARSET "UTF-8";
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);*/
 
 html {
   height: 100%;
-  background: whitesmoke;
+  background: white;
+  /*background: whitesmoke;*/
   /*background: rgb(245, 252, 243);*/
   /*min-height: 650px;*/
 }
@@ -29,17 +30,18 @@ h1, h2, h3, p {
     /*width: 20%;*/
     height: 100%;
     /*min-height: 650px;*/
-    color: slategray;
-    background: white;
+    color: darkgray;;
+    /*color: slategray;*/
+    background: rgb(55, 55, 55);
     border-right: 1px solid rgb(223, 223, 223);
-    font-family: 'Jeju Gothic', sans-serif;
+    /*font-family: 'Jeju Gothic', sans-serif;*/
 }
 
 .view {
     position: page;
     height: 100%;
     min-height: 650px;
-    font-family: 'Jeju Gothic', sans-serif;
+    /*font-family: 'Jeju Gothic', sans-serif;*/
 }
 
 /* 로고 관련 */
@@ -56,8 +58,9 @@ h1, h2, h3, p {
 }
 
 .logo {
-  height: 40%;
-  width: 75%; 
+  font-size: 30px;
+  text-decoration: none;
+  color: white; 
 }
 
 /*유저정보*/
@@ -76,7 +79,7 @@ h1, h2, h3, p {
 
 /* 메뉴 바 */
 .menuwrapper {
-  height: 45%;    
+  height: 50%;    
   width: 100%;
   display: table;
 }
@@ -100,33 +103,37 @@ h1, h2, h3, p {
 }
 
 .menuview a {
-  border-bottom: 1px solid whitesmoke;
-  color: slategray;
+  /*border-bottom: 1px solid darkgray;*/
+  color: darkgray;
+  /*color: slategray;*/
   display: block;
   padding: 13px 12px;
   text-decoration: none;
-  font-family: 'Jeju Gothic', sans-serif;
+  /*font-family: 'Jeju Gothic', sans-serif;*/
 }
 
 .menuview a:hover {
-  background: rgb(45, 57, 90);
+  background: darkred;
+  /*background: rgb(45, 57, 90);*/
   /*background: rgb(55, 55, 55);  */
   /*background: rgb(92, 178, 171);*/
-  color: #fff;
+  color: whitesmoke;
 }
 
 /* copyright 부분  */
 .footerwrapper {
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: table;
+  border-top: 1px solid dimgray;
 }
 
 .footerview {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  font-size: small;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 
