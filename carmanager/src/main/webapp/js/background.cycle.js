@@ -80,7 +80,7 @@ $.fn.backgroundCycle = function(options) {
         var sizeMode;
 
         switch (settings.backgroundSize) {
-            default:
+            default:    
                 sizeMode = settings.backgroundSize;
                 break;
             case SCALING_MODE_NONE:
