@@ -78,15 +78,15 @@ section {
 }
 
 /* 오른쪽 로그인 영역 설정 */
+
 #login {
   width: 300px;
-  height: 300px;
+  height: 100px;
   position: absolute;
   top: 28.4%;
   right: 5%;
   
   float: left;
-  /* border: 1px solid red; */
 }
 
 #null {
