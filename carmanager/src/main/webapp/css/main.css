@@ -3,7 +3,7 @@
 
 html {
   height: 100%;
-  background: white;
+  background: whitesmoke;
   /*background: whitesmoke;*/
   /*background: rgb(245, 252, 243);*/
   /*min-height: 650px;*/
@@ -32,7 +32,7 @@ h1, h2, h3, p {
     /*min-height: 650px;*/
     color: darkgray;;
     /*color: slategray;*/
-    background: rgb(55, 55, 55);
+    background: white;
     border-right: 1px solid rgb(223, 223, 223);
     /*font-family: 'Jeju Gothic', sans-serif;*/
 }
@@ -46,25 +46,27 @@ h1, h2, h3, p {
 
 /* 로고 관련 */
 .logowrapper {
-  height: 30%;
+  height: 34%;
   width: 100%;
   display: table; 
+  /*border-bottom: 1px solid dimgray;*/
 }
 
 .logoview {
-  text-align: center; 
+  text-align: left; 
   display: table-cell;
   vertical-align: middle;
+
 }
 
 .logo {
   font-size: 30px;
   text-decoration: none;
-  color: white; 
+  color: black; 
 }
 
 /*유저정보*/
-.userinfowrapper {
+/*.userinfowrapper {
   height: 10%;
   width: 100%;
   display: table;
@@ -75,19 +77,19 @@ h1, h2, h3, p {
   font-size: smaller;
   display: table-cell;
   vertical-align: middle;
-}
+}*/
 
 /* 메뉴 바 */
 .menuwrapper {
-  height: 50%;    
+  height: 56%;    
   width: 100%;
-  display: table;
+  /*display: table;*/
 }
 
 .menuview {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;    
+  text-align: left;
+  /*display: table-cell;
+  vertical-align: middle;    */
 }
 
 .menuview li {
@@ -107,7 +109,7 @@ h1, h2, h3, p {
   color: darkgray;
   /*color: slategray;*/
   display: block;
-  padding: 13px 12px;
+  padding: 17px 12px;
   text-decoration: none;
   /*font-family: 'Jeju Gothic', sans-serif;*/
 }
@@ -125,7 +127,6 @@ h1, h2, h3, p {
   height: 10%;
   width: 100%;
   display: table;
-  border-top: 1px solid dimgray;
 }
 
 .footerview {
