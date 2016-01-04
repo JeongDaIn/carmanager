@@ -26,7 +26,7 @@ h1, h2, h3, p {
     top: 0;
     left: 0;
     z-index: 11;
-    width: 250px;
+    width: 210px;
     /*width: 20%;*/
     height: 100%;
     /*min-height: 650px;*/
@@ -46,7 +46,7 @@ h1, h2, h3, p {
 
 /* 로고 관련 */
 .logowrapper {
-  height: 34%;
+  height: 205px;
   width: 100%;
   display: table; 
   /*border-bottom: 1px solid dimgray;*/
@@ -81,7 +81,7 @@ h1, h2, h3, p {
 
 /* 메뉴 바 */
 .menuwrapper {
-  height: 56%;    
+  height: 62%;    
   width: 100%;
   /*display: table;*/
 }
@@ -89,11 +89,11 @@ h1, h2, h3, p {
 .menuview {
   text-align: left;
   /*display: table-cell;
-  vertical-align: middle;    */
+  vertical-align: middle;*/
 }
 
 .menuview li {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
   list-style: none;
 }
@@ -106,10 +106,10 @@ h1, h2, h3, p {
 
 .menuview a {
   /*border-bottom: 1px solid darkgray;*/
-  color: darkgray;
+  color: black;
   /*color: slategray;*/
   display: block;
-  padding: 17px 12px;
+  padding: 13px 18px;
   text-decoration: none;
   /*font-family: 'Jeju Gothic', sans-serif;*/
 }
@@ -120,6 +120,10 @@ h1, h2, h3, p {
   /*background: rgb(55, 55, 55);  */
   /*background: rgb(92, 178, 171);*/
   color: whitesmoke;
+}
+
+.menu_icon {
+  height: 25px;    
 }
 
 /* copyright 부분  */
