@@ -58,15 +58,8 @@ section {
   width: 500px;
   height: 220px;
   position: absolute;
-
   top: 28.4%;
-  left: 5%;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-
-  top: 32%;
-  left: 10%;
+  left: 8%;
   font-weight: lighter;
   font-size: 40px;
   color: antiquewhite;
@@ -109,6 +102,15 @@ section {
 
 .form-control {
 	width: 88%
+}
+
+#topText {
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
 }
 
 #goJoin {

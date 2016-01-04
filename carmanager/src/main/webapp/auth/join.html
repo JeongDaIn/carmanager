@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>회원가입</title>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
 
-<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="../css/join.css">
-
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/join.css">
 </head>
 <body>
-<header></header>
+  <header></header>
   <div id="main" class="container">
     <div id="mainText" class="cycle-slideshow" 
-    data-cycle-fx="fade" 
-    data-cycle-timeout="2000"
-    data-cycle-slides="> div">
-    <div>
+      data-cycle-fx="fade" 
+      data-cycle-timeout="2000"
+      data-cycle-slides="> div">
+      
+      <div>
         <p>지금</p><p class="intext">'이 순간'</p>
         <p>내 차를 부탁해</p>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>지금</p><p class="intext"> '여기에'</p>
         <p>내 차를 부탁해</p>
-    </div>
-    <div>
-      <p>당신 + </p><p class="intext">'자동차'<p>
-      <p>= 내 차를 부탁해<p>
-    </div>
-  </div>
-<!--</div> 이거 잘못 넣음;;; 지워도 됨 -->
-  <section>
-  </section>
-  <form id="null"></form>
-  <form id="join" class="form-inline">
-    <div id="topText">회원가입</div>  
-    <div id="imgInput">
-      <img src="../img/exam.png" class="img-thumbnail"><br>
-      <label for="fileInput">사진 등록</label>
-      <input type="file" id="fileInput">
-    </div>
-    <div id="textInput" class="form-group">
-      <div id="email">
-        <input id="input_email" class="form-control" type="text" size="15" placeholder="Email">
-        <input type="button" id="check" class="btn btn-default" value="중복체크">
       </div>
-      <div id="nickName">
-        <input id="input_nickName" class="form-control" type="text" size="15" placeholder="NickName">
+      <div>
+        <p>당신 + </p><p class="intext">'자동차'<p>
+        <p>= 내 차를 부탁해<p>
       </div>
-      <div id="password">
-        <input id="input_password" class="form-control" type="password" size="15" placeholder="Password">
+    </div>
+  
+    <form id="null"></form>
+  
+    <form class="input">
+      <div id="topText">회원가입</div>  
+      <div id="imgInput">
+        <img src="../img/exam.png" class="img-thumbnail"><br>
+        <label for="fileInput">사진 등록</label>
+        <input type="file" id="fileInput">
       </div>
+      
+      <div id="textInput" class="form-group">
+        <div id="email">
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="이메일" size="15" required>
+          <input type="button" id="check" value="중복체크">
+        </div>
+        <div id="nickName">
+          <label for="nickname">NickName</label>
+          <input type="text" name="nickname" placeholder="별명" size="15" required>
+        </div>
         <div id="password">
-        <input id="input_password_confirm" class="form-control" type="password" size="15" placeholder="Password 확인">
+          <label for="password">Password</label>
+          <input type="password" name='password' size="15" placeholder="비밀번호" required>
+        </div>
+        <div id="password">
+          <label for="password_confirm">Password</label>
+          <input type="password" name='password_confirm' size="15" placeholder="비밀번호 확인" required>
+        </div>
       </div>
-    </div>
-    <div id="button">
-      <input type="button" class="btn btn-default" onclick="go()" value="가입">
-      <input type="button" class="btn btn-default" onclick="go()" value="취소">
-    </div>
-  </form>
+    
+      <div id="button">
+        <input type="button" class="btn btn-default" onclick="go()" value="가입">
+        <input type="button" class="btn btn-default" onclick="go()" value="취소">
+      </div>
+        
+    </form>
   </div>
-  <footer></footer>
+  
   <script type="text/javascript" src="../js/login.js"></script>
   <script type="text/javascript" src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/background.cycle.js"></script>
   <script type="text/javascript" src="../js/cycle2.js"></script>
   <script type="text/javascript" src="../js/cycle.js"></script>
+  <script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="../js/modernizr.custom.63321.js"></script>
   <script type="text/javascript">
 
-	  var _gaq = _gaq || [];
+    var _gaq = _gaq || [];
   	_gaq.push(['_setAccount', 'UA-36251023-1']);
   	_gaq.push(['_setDomainName', 'jqueryscript.net']);
   	_gaq.push(['_trackPageview']);
