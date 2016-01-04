@@ -19,6 +19,16 @@
 <link rel="stylesheet" href="../js/nivo-slider.css" type="text/css" media="screen" />
 <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
 
+<!-- select 박스 효과 -->
+<script src="../js/jquery.jqtransform.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jqtransform.css" />
+
+<script type="text/javascript">
+  $(function(){
+    $('#select_container').jqTransform();
+  });
+</script> 
+
 <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
@@ -67,13 +77,12 @@
   
   
   <div class="view">
-    <div class="selectcar">
-      <select>
-        <option>팥죽이</option>
-        <option>팥빵이</option>
-        <option>일탈이</option>
+    <div id="select_container" class="selectcar">
+      <select class="m_select select01">
+        <option value="">팥죽이</option>
+        <option value="">팥빵이</option>
+        <option value="">일탈이</option>
       </select>
-      <span>입니다</span> 
     </div>
     <div class="averoil">
       <h2>ooo님의 연비 분석</h2>
@@ -110,7 +119,7 @@
         <svg id="fillgauge2" width="0%" height="0" onclick="gauge2.update(NewValue());"></svg>
         <svg id="fillgauge3" width="0%" height="0" onclick="gauge3.update(NewValue());"></svg>
         <svg id="fillgauge4" width="0%" height="0" onclick="gauge4.update(NewValue());"></svg>
-        <svg id="fillgauge5" width="350px" height="270px"></svg>
+        <svg id="fillgauge5" width="97%" height="250"></svg>
         <svg id="fillgauge6" width="0%" height="0" onclick="gauge6.update(NewValue());"></svg>
         <script language="JavaScript" src="../js/chart.js"></script>
     </div>
@@ -182,6 +191,7 @@
                 'bottomOffsetValue': 30
             };
             Nwagon.chart(options);
+            
         </script>
         </div>
     </div>
