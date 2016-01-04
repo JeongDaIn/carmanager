@@ -3,7 +3,7 @@
 
 html {
   height: 100%;
-  background: white;
+  background: whitesmoke;
   /*background: whitesmoke;*/
   /*background: rgb(245, 252, 243);*/
   /*min-height: 650px;*/
@@ -32,7 +32,7 @@ h1, h2, h3, p {
     /*min-height: 650px;*/
     color: darkgray;;
     /*color: slategray;*/
-    background: rgb(55, 55, 55);
+    background: white;
     border-right: 1px solid rgb(223, 223, 223);
     /*font-family: 'Jeju Gothic', sans-serif;*/
 }
@@ -46,7 +46,7 @@ h1, h2, h3, p {
 
 /* 로고 관련 */
 .logowrapper {
-  height: 25%;
+  height: 34%;
   width: 100%;
   display: table; 
   /*border-bottom: 1px solid dimgray;*/
@@ -62,7 +62,7 @@ h1, h2, h3, p {
 .logo {
   font-size: 30px;
   text-decoration: none;
-  color: white; 
+  color: black; 
 }
 
 /*유저정보*/
@@ -81,7 +81,7 @@ h1, h2, h3, p {
 
 /* 메뉴 바 */
 .menuwrapper {
-  height: 65%;    
+  height: 56%;    
   width: 100%;
   /*display: table;*/
 }
@@ -127,7 +127,6 @@ h1, h2, h3, p {
   height: 10%;
   width: 100%;
   display: table;
-  border-top: 1px solid dimgray;
 }
 
 .footerview {
