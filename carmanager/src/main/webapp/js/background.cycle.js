@@ -44,7 +44,7 @@ $.fn.backgroundCycle = function(options) {
     var settings = $.extend({
         imageUrls: [],
         duration: 5000,
-        fadeSpeed: 1000,
+        fadeSpeed: 2000,
         backgroundSize: SCALING_MODE_NONE
     }, options);
 
