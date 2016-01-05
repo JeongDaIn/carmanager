@@ -62,8 +62,9 @@ body {
   z-index:2;
   /*#2B2547*/
   
-  background-color: black;
-  opacity: 0.7;
+  background-color: RGB(25, 25, 25);
+  opacity: 0.9;
+  border-radius: 8px 8px 8px 8px;
   
   float: left;
 }
