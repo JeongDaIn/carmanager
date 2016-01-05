@@ -34,18 +34,18 @@ body {
   width: 500px;
   height: 220px;
   position: absolute;
-  top: 28.4%;
-  left: 8%;
+  top: 250px;
+  left: 150px;
   font-weight: lighter;
   font-size: 40px;
   color: antiquewhite;
-  text-shadow: darkgray 1px 1px 10px;
+  text-shadow: darkgray 1px 1px 1px;
   font-family: sans-serif;
   /*border: 1px solid red;*/
 }
 
 .intext {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: bolder;
 }
 
@@ -87,13 +87,27 @@ body {
     display: block;
 }
 
+/* 로그인폼 텍스트 */
 #topText {
 	font-size: 25px;
-	text-align: center;
+	text-align: left;
 	padding-top: 10px;
-	margin-bottom: 10px;
-  font-weight: bold;
-  color: white;
+	margin-bottom: 15px;
+    border-bottom: 1px solid darkred;
+    border-bottom-width: 2px;
+    font-weight: normal;
+    color: white;
+    /*text-shadow: white 1px 1px 1px;*/
+}
+
+#now {
+    color: darkred;
+    font-weight: bold;
+}
+
+#textMycar {
+    color: darkred;
+    font-weight: bold;
 }
 
 #imgInput {
