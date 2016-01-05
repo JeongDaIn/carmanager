@@ -30,23 +30,24 @@ body {
 	background-size:cover;
 }
 /* BODY속 container 끝 */
+
 /* 멘트 영역 부분 시작 */
 #mainText {
   width: 500px;
   height: 220px;
   position: absolute;
-  top: 28.4%;
-  left: 8%;
+  top: 250px;
+  left: 150px;
   font-weight: lighter;
   font-size: 40px;
   color: antiquewhite;
-  text-shadow: darkgray 1px 1px 10px;
+  text-shadow: darkgray 1px 1px 1px;
   font-family: sans-serif;
   /*border: 1px solid red;*/
 }
 
 .intext {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: bolder;
 }
 /* 멘트 영역 부분 끝 */
@@ -83,15 +84,30 @@ body {
     text-shadow: 0 2px 1px rgba(0,0,0,0.3);
 }
 
+/* 로그인폼 텍스트 */
 #topText {
 	font-size: 25px;
-	text-align: center;
+	text-align: left;
 	padding-top: 10px;
-	margin-bottom: 10px;
-  font-weight: bold;
-  color: white;
+	margin-bottom: 15px;
+    border-bottom: 1px solid darkred;
+    border-bottom-width: 2px;
+    font-weight: normal;
+    color: white;
+    /*text-shadow: white 1px 1px 1px;*/
 }
 
+#now {
+    color: darkred;
+    font-weight: bold;
+}
+
+#textMycar {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* 로그인폼 CSS */
 .form-4 input[type=text],
 .form-4 input[type=password] {
     width: 100%;
