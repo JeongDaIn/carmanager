@@ -12,30 +12,29 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+/* BODY속 container 시작 */
 .container {
   position: relative;
   padding: 0px;
   width: 100%;
-  height: 86%;
-}
-
-/* 본문 내용 설정 */
-section {
-  /*margin: 0 181px 0 181px;*/
   height: 100%;
-  padding: 0px 0px;
-  min-width: 300px;
 }
-
-/* 끝 - 본문 내용 설정 */
+#gallery{
+		z-index:1;
+}
+#gallery div { 
+	width: 100%; 
+	height: 100%; 
+	background-size:cover;
+}
+/* BODY속 container 끝 */
 
 /* 왼쪽 편 영역 설정 */
 #mainText {
   width: 500px;
   height: 220px;
   position: absolute;
-  top: 20.2%;
+  top: 28.4%;
   left: 8%;
   font-weight: lighter;
   font-size: 40px;
@@ -50,18 +49,42 @@ section {
     font-weight: bolder;
 }
 
-/* 오른쪽 편 영역 설정 */
-
+/* 로그인 영역 배경 시작 */
 #null {
   width: 430px;
   height: 430px;
   position: absolute;
-  top: 17%;
+  top: 25%;
   right: 5%;
- 
+  z-index:2;
   background-color: black;
   opacity: 0.7;
   float: right;
+}
+
+/* 로그인 영역 배경 끝 */
+
+/* 로그인 영역 설정 시작 */
+
+.input {
+  width: 400px;
+  position: absolute;
+  top: 30%;
+  right: 6%;
+  z-index: 4;
+  float: left;
+
+  font-family: 'Raleway', 'Lato', Arial, sans-serif;
+  color: white;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+
+.input label:hover ~ input {
+    border-color: #333;
+}
+
+.input label {
+    display: block;
 }
 
 #topText {
@@ -117,21 +140,6 @@ section {
   border: 0;
 }
 
-.input {
-  /* Size and position */
-  width: 400px;
-  position: absolute;
-  top: 21%;
-  right: 6%;
-  
-  float: left;
-
-  /* Font styles */
-  font-family: 'Raleway', 'Lato', Arial, sans-serif;
-  color: white;
-  text-shadow: 0 2px 1px rgba(0,0,0,0.3);
-}
-
 #textInput input[type=text], 
 #textInput input[type=password] {
   width: 140px;
@@ -162,18 +170,49 @@ section {
   font-size: 13px;
 }
 
+#textInput input[type=button]:hover, #button input[type=button]:hover, #imgInput label:hover {
+    background: red;
+    
+    /*box-shadow: 
+        inset 0 1px rgba(255,255,255,0.5), 
+        inset 0 20px 30px rgba(145,0,0,0.5);*/
+}
+
+#textInput input::-webkit-input-placeholder {
+    color: white;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+#textInput input:-moz-placeholder {
+    color: white;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+#textInput input:-ms-input-placeholder {
+    color: white;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+#textInput input:hover, #imgInput label:hover, #button input:hover {
+    border-color: white;
+}
+
+#textInput input:focus, #imgInput label:focus, #button input:focus {
+    box-shadow: 
+        0 1px 0 rgba(255,255,255,0.2), 
+        inset 0 1px 1px rgba(0,0,0,0.1),
+        0 0 0 3px rgba(255,255,255,0.15);
+    outline: none;
+}
+
+#textInput input:focus {
+    outline: 1px solid white;
+}
+
 #textInput label {
     display: none;
     padding: 0 0 5px 2px;
     cursor: pointer;
-}
-
-.input label:hover ~ input {
-    border-color: #333;
-}
-
-.input label {
-    display: block;
 }
 
 #button {
@@ -244,45 +283,6 @@ section {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Raleway', 'Lato', Arial, sans-serif;
-}
-
-#textInput input[type=button]:hover, #button input[type=button]:hover, #imgInput label:hover {
-    background: red;
-    
-    /*box-shadow: 
-        inset 0 1px rgba(255,255,255,0.5), 
-        inset 0 20px 30px rgba(145,0,0,0.5);*/
-}
-
-#textInput input::-webkit-input-placeholder {
-    color: white;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
-}
-
-#textInput input:-moz-placeholder {
-    color: white;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
-}
-
-#textInput input:-ms-input-placeholder {
-    color: white;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
-}
-
-#textInput input:hover, #imgInput label:hover, #button input:hover {
-    border-color: white;
-}
-
-#textInput input:focus, #imgInput label:focus, #button input:focus {
-    box-shadow: 
-        0 1px 0 rgba(255,255,255,0.2), 
-        inset 0 1px 1px rgba(0,0,0,0.1),
-        0 0 0 3px rgba(255,255,255,0.15);
-    outline: none;
-}
-
-#textInput input:focus {
-    outline: 1px solid white;
 }
 
 /* 끝 - 오른쪽 편 영역 설정 */
