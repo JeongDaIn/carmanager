@@ -14,46 +14,23 @@ body {
 
 }
 
-/*로고 영역 부분*/
-header {
-  width: 100%;
-  height: 7%;
-  position: relative;
-  background-color: white;
-}
-
-.logo {
-  height: 100%;
-  width: 20%;
-}
-
-/*
-footer {
-  width: 100%;
-  height: 7%;
-  position: relative;
-  left: 0px;
-  bottom: 0px;
-  text-align: center;
-}
-*/
-
+/* BODY속 container 시작 */
 .container {
   position: relative;
   padding: 0px;
   width: 100%;
-  height: 86%;
-}
-
-/* 본문 내용 설정 */
-section {
-  /*margin: 0 181px 0 181px;*/
   height: 100%;
-  padding: 0px 0px;
 }
-/* 끝 - 본문 내용 설정 */
-
-/* 멘트 영역 부분 */
+#gallery{
+		z-index:1;
+}
+#gallery div { 
+	width: 100%; 
+	height: 100%; 
+	background-size:cover;
+}
+/* BODY속 container 끝 */
+/* 멘트 영역 부분 시작 */
 #mainText {
   width: 500px;
   height: 220px;
@@ -72,16 +49,16 @@ section {
     font-size: 42px;
     font-weight: bolder;
 }
+/* 멘트 영역 부분 끝 */
 
-/* 오른쪽 로그인 영역 설정 */
-
+/* 오른쪽 로그인 영역 설정 시작 */
 #null {
   width: 400px;
   height: 400px;
   position: absolute;
   top: 25%;
   right: 5%;
-  
+  z-index:2;
   /*#2B2547*/
   
   background-color: black;
@@ -149,7 +126,7 @@ A:hover {
   text-align:center;
   color: white;
 }
-
+/* 오른쪽 로그인 영역 설정 끝 */
 /* GLOBALS */
 
 *,
@@ -178,7 +155,7 @@ A:hover {
     position: absolute;
     top: 30%;
     right: 8%;
-  
+ 		z-index: 4;
     float: left;
 
     /* Font styles */

@@ -12,23 +12,22 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+/* BODY속 container 시작 */
 .container {
   position: relative;
   padding: 0px;
   width: 100%;
-  height: 86%;
-}
-
-/* 본문 내용 설정 */
-section {
-  /*margin: 0 181px 0 181px;*/
   height: 100%;
-  padding: 0px 0px;
-  min-width: 300px;
 }
-
-/* 끝 - 본문 내용 설정 */
+#gallery{
+		z-index:1;
+}
+#gallery div { 
+	width: 100%; 
+	height: 100%; 
+	background-size:cover;
+}
+/* BODY속 container 끝 */
 
 /* 왼쪽 편 영역 설정 */
 #mainText {
@@ -58,7 +57,7 @@ section {
   position: absolute;
   top: 17%;
   right: 5%;
- 
+  z-index:2;
   background-color: black;
   opacity: 0.7;
   float: right;
@@ -123,7 +122,7 @@ section {
   position: absolute;
   top: 21%;
   right: 6%;
-  
+  z-index: 4;
   float: left;
 
   /* Font styles */
