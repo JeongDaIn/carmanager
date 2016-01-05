@@ -65,19 +65,6 @@ h1, h2, h3, p {
   color: black; 
 }
 
-/*유저정보*/
-/*.userinfowrapper {
-  height: 10%;
-  width: 100%;
-  display: table;
-}
-
-.userinfoview {
-  text-align: center;
-  font-size: smaller;
-  display: table-cell;
-  vertical-align: middle;
-}*/
 
 /* 메뉴 바 */
 .menuwrapper {
@@ -139,6 +126,8 @@ h1, h2, h3, p {
 
 
 /* 4가지 차트 view 부분 */
+
+/* 차 선택 */
 .selectcar {
     /*border: 1px solid red;*/
     position: absolute;
@@ -149,16 +138,49 @@ h1, h2, h3, p {
     margin: 0px;    
 }
 
+#select_container{
+  width:90px; 
+}
+
 .carbox {
     width: 1250px;
     height: 60px;
     border-bottom: 1px solid rgb(223, 223, 223);
 }
 
-#select_container{
-  width:90px; 
+/* 유저정보 */
+
+.userinfo {
+    top: 150px;
+    left: 1020px;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 10;
+    position: absolute;
+}
+/* .userinfowrapper {
+  /*top: 400px;
+  left: 500px;
+  height: 100px;
+  width: 100px;*/
+  /*display: table;
 }
 
+.userinfoview {
+    top: 400px;
+  left: 500px;
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: smaller;
+  /*display: table-cell;
+  vertical-align: middle;
+}*/
+
+/* 평균연비 */
 .averoil {
     /*border: 1px solid red;*/
     border-right: 1px solid rgb(223, 223, 223);
@@ -169,6 +191,7 @@ h1, h2, h3, p {
     padding: 0px;
 }
 
+/* 연비효율 */
 .effi {
     /*border: 1px solid red;*/
     border-bottom: 1px solid rgb(223, 223, 223);
@@ -179,6 +202,7 @@ h1, h2, h3, p {
     left: 800px;
 }
 
+/* 이미지위 텍스트 */
 .viewintitle {
     /*border: 1px solid red;*/
     position: absolute;
@@ -196,6 +220,7 @@ h1, h2, h3, p {
     text-shadow: whitesmoke 0px 0px 5px;
 }
 
+/* 이미지슬라이드 */
 .viewinslide {
     /*border: 1px solid red;*/
     border-right: 1px solid rgb(223, 223, 223);
@@ -205,6 +230,7 @@ h1, h2, h3, p {
     width: 494px;      
 }
 
+/* 평균주유값 */
 .buyoil {
     /*border: 1px solid red;*/
     border-bottom: 1px solid rgb(223, 223, 223);
@@ -214,7 +240,7 @@ h1, h2, h3, p {
     left: 800px;
 }
 
-
+/* 차량 소모품 상태 */
 .carcondition {
     border: 1px solid red;
     position: absolute;

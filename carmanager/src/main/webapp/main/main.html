@@ -29,6 +29,7 @@
   });
 </script> 
 
+
 <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
@@ -44,21 +45,6 @@
         <a href="../main/main.html" class="logo">&nbsp내 차를 부탁해</a>
       </div>
     </div>
-    
-    <!--<div class="userinfowrapper">
-      <div class="userinfoview">
-        <span>dain@test.com</span>
-        <span>님</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type="button" onclick="logoutbtn_click()" value="로그아웃"/>
-      </div>
-    </div>
-    
-    <script type="text/javascript">
-      function logoutbtn_click() {
-        location.href="../auth/login.html";
-      }
-    </script>
-    -->    
     
     <div class="menuwrapper">
       <div class="menuview">
@@ -83,9 +69,9 @@
   
   
   <div class="view">
+      
     <div class="carbox">
      <img src="../img/maintop_c.png">
-        <!--<h2>등록된 차를 골라보세요.</h2>-->
         <div id="select_container" class="selectcar">
         <select class="m_select select01">
             <option value="">팥죽이</option>
@@ -93,7 +79,31 @@
             <option value="">일탈이</option>
         </select>
         </div>
+        
+        <div class="userinfo">
+            <p>dain@test.com</p>님 <img src="../img/logout.png" width="20" height="20"> 
+        </div>
     </div>
+      
+   
+      <!--<div class="userinfoview">
+        <p>dain@test.com</p>
+        <span>님</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <img src="../img/logout.png" width="20" height="20">       
+        <input type="button" onclick="logoutbtn_click()" value="로그아웃"/>
+      </div>
+   
+    
+    <script type="text/javascript">
+      function logoutbtn_click() {
+        location.href="../auth/login.html";
+    
+      }
+    </script>-->
+        
+    
+    
+    
     <div class="averoil">
       <h2>ooo님의 연비 분석</h2>
       <p>차종의 공인연비 대비 평균 연비를 보여드립니다.</p>
@@ -130,6 +140,8 @@
         <svg id="fillgauge3" width="0%" height="0" onclick="gauge3.update(NewValue());"></svg>
         <svg id="fillgauge4" width="0%" height="0" onclick="gauge4.update(NewValue());"></svg>
         <svg id="fillgauge5" width="350" height="270"></svg>
+        <!-- 연비효율이 음수인 경우 레드차트 
+        <svg id="fillgauge5" width="350" height="270"></svg> -->
         <svg id="fillgauge6" width="0%" height="0" onclick="gauge6.update(NewValue());"></svg>
         <script language="JavaScript" src="../js/chart.js"></script>
     </div>
