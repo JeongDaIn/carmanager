@@ -17,61 +17,10 @@ body {
   left: 0;
 }
 
-
 /* 메뉴 바 */
 .open-sidebar 
 { 
   left: 240px; 
-}
-
-.swipe-area {
-  position: absolute;
-  width: 50px;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background: #f3f3f3;
-  z-index: 0;
-}
-
-/* 로고 관련 */
-.logowrapper {
-  height: 205px;
-  width: 100%;
-  display: table; 
-}
-
-.logoview {
-  text-align: left; 
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.logo {
-  font-size: 30px;
-  text-decoration: none;
-  color: black; 
-}
-
-/* 메뉴 아이콘 설정 */
-.menu_icon {
-  height: 20px;    
-}
-
-/* copyright 부분  */
-.footerwrapper {
-  height: 10%;
-  width: 100%;
-  display: table;
-}
-
-
-.footerview {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 12px;
-  font-weight: lighter;
 }
 
 #sidebar {
@@ -103,6 +52,45 @@ body {
 
 #sidebar ul li:hover a { background: #C9223D; }
 
+/* 메뉴 아이콘 설정 */
+.menu_icon {
+  height: 20px;    
+}
+
+/* 로고 관련 */
+.logowrapper {
+  height: 205px;
+  width: 100%;
+  display: table; 
+}
+
+.logoview {
+  text-align: left; 
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: black; 
+}
+
+/* copyright 부분  */
+.footerwrapper {
+  height: 10%;
+  width: 100%;
+  display: table;
+}
+
+.footerview {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
 /*메뉴 버튼 관련 작업 */
 .main-content {
   position: absolute;
@@ -127,6 +115,9 @@ body {
   background-color: #fff;
   border-radius: 1px;
 }
+
+
+
 
 /* 메인 표출 정보를 보여주는 view 부분 start */
 .view {
