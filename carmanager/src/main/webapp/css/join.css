@@ -52,6 +52,7 @@ section {
 
 /* 오른쪽 편 영역 설정 */
 
+/* 회원가입 폼 뒷부분 배경 */
 #null {
   width: 430px;
   height: 430px;
@@ -64,6 +65,8 @@ section {
   float: right;
 }
 
+/* 회원가입 폼 시작 */
+
 #topText {
 	font-size: 25px;
 	text-align: center;
@@ -71,6 +74,14 @@ section {
 	margin-bottom: 10px;
   font-weight: bold;
   color: white;
+}
+
+.input label:hover ~ input {
+    border-color: #333;
+}
+
+.input label {
+    display: block;
 }
 
 #imgInput {
@@ -166,14 +177,6 @@ section {
     display: none;
     padding: 0 0 5px 2px;
     cursor: pointer;
-}
-
-.input label:hover ~ input {
-    border-color: #333;
-}
-
-.input label {
-    display: block;
 }
 
 #button {
@@ -292,6 +295,7 @@ header {
   position: relative;
   color: white;
 }
+
 footer {
   width: 100%;
   height: 7%;
@@ -300,3 +304,5 @@ footer {
   bottom: 0px;
   text-align: center;
 }
+
+/* 회원가입 폼 끝 */
