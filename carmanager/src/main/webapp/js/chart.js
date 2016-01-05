@@ -31,7 +31,6 @@ config3.valueCountUp = false;
 config3.displayPercent = false;
 var gauge4 = loadLiquidFillGauge("fillgauge4", 50, config3);
 
-/* 양수인 경우 출렁이는 그린차트 */
 var config4 = liquidFillGaugeDefaultSettings();
 config4.circleThickness = 0.1;
 config4.circleColor = "#008610";
@@ -49,24 +48,6 @@ config4.textSize = 0.75;
 config4.waveCount = 3;
 var gauge5 = loadLiquidFillGauge("fillgauge5", 6.1, config4);
 
-/* 음수인 경우 출렁이는 레드차트 
-var config4 = liquidFillGaugeDefaultSettings();
-config4.circleThickness = 0.1;
-config4.circleColor = "#a60000";
-config4.textColor = "#f20000";
-config4.waveTextColor = "#f20000";
-config4.waveColor = "#f20000";
-config4.textVertPosition = 0.8;
-config4.waveAnimateTime = 1000;
-config4.waveHeight = 0.05;
-config4.waveAnimate = true;
-config4.waveRise = false;
-config4.waveHeightScaling = false;
-config4.waveOffset = 0.25;
-config4.textSize = 0.75;
-config4.waveCount = 3;
-var gauge5 = loadLiquidFillGauge("fillgauge5", 6.1, config4);
-*/
 var config5 = liquidFillGaugeDefaultSettings();
 config5.circleThickness = 0.4;
 config5.circleColor = "#050F0D";

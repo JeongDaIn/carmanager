@@ -29,7 +29,6 @@
   });
 </script> 
 
-
 <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
@@ -40,15 +39,16 @@
   
   <!-- 메뉴 바 작업 start -->
   <div class="menubar">
-    <div class="logowrapper">
-      <div class="logoview">
-        <a href="../main/main.html" class="logo">&nbsp내 차를 부탁해</a>
-      </div>
-    </div>
     
-    <div class="menuwrapper">
-      <div class="menuview">
-        <ul>
+    <div class="container">
+      <div class="menuview" id="sidebar">
+        <div class="logowrapper">
+          <div class="logoview">
+            <a href="../main/main.html" class="logo">&nbsp내 차를 부탁해</a>
+          </div>
+        </div>
+        
+        <ul>              
           <li><a href='#'>&nbsp&nbsp<img src="../img/home.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>MyPage</span></a></li>
           <li><a href='#'>&nbsp&nbsp<img src="../img/car.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량등록</span></a></li>
           <li><a href='#'>&nbsp&nbsp<img src="../img/manage.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량관리</span></a></li>
@@ -56,22 +56,52 @@
           <li><a href='#'>&nbsp&nbsp<img src="../img/match.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>맞춤서비스</span></a></li>
           <li><a href='#'>&nbsp&nbsp<img src="../img/community.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>커뮤니티</span></a></li>
         </ul>
+      <div class="footerwrapper"> 
+        <div class="footerview">
+          <p> &copy 2016. 다인이네팀 all rights reserved</p>
+        </div>
       </div>
     </div>
     
-    <div class="footerwrapper"> 
-      <div class="footerview">
-        <p> &copy 2016. 다인이네팀 all rights reserved</p>
-      </div>
-    </div>
+      
   </div>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <script>
+  $(window).load(function(){
+        $("[data-toggle]").click(function() {
+          var toggle_el = $(this).data("toggle");
+          $(toggle_el).toggleClass("open-sidebar");
+        });
+         $(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          }); 
+      });
+  </script>
+  
   <!-- 메뉴바 작업 end -->
   
   
   <div class="view">
-      
     <div class="carbox">
+      
      <img src="../img/maintop_c.png">
+      <div class="main-content">
+        <div class="swipe-area"></div>
+        <a href="#" data-toggle=".container" id="sidebar-toggle"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+      </div>
+        <!--<h2>등록된 차를 골라보세요.</h2>-->
         <div id="select_container" class="selectcar">
         <select class="m_select select01">
             <option value="">팥죽이</option>
@@ -79,31 +109,7 @@
             <option value="">일탈이</option>
         </select>
         </div>
-        
-        <div class="userinfo">
-            <p>dain@test.com</p>님 <img src="../img/logout.png" width="20" height="20"> 
-        </div>
     </div>
-      
-   
-      <!--<div class="userinfoview">
-        <p>dain@test.com</p>
-        <span>님</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <img src="../img/logout.png" width="20" height="20">       
-        <input type="button" onclick="logoutbtn_click()" value="로그아웃"/>
-      </div>
-   
-    
-    <script type="text/javascript">
-      function logoutbtn_click() {
-        location.href="../auth/login.html";
-    
-      }
-    </script>-->
-        
-    
-    
-    
     <div class="averoil">
       <h2>ooo님의 연비 분석</h2>
       <p>차종의 공인연비 대비 평균 연비를 보여드립니다.</p>
@@ -140,8 +146,6 @@
         <svg id="fillgauge3" width="0%" height="0" onclick="gauge3.update(NewValue());"></svg>
         <svg id="fillgauge4" width="0%" height="0" onclick="gauge4.update(NewValue());"></svg>
         <svg id="fillgauge5" width="350" height="270"></svg>
-        <!-- 연비효율이 음수인 경우 레드차트 
-        <svg id="fillgauge5" width="350" height="270"></svg> -->
         <svg id="fillgauge6" width="0%" height="0" onclick="gauge6.update(NewValue());"></svg>
         <script language="JavaScript" src="../js/chart.js"></script>
     </div>

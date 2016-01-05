@@ -9,8 +9,6 @@ v\:fill {
 	behavior : url(#default#VML);
 }
 
-.tooltip {filter:alpha(opacity=1) !important;opacity:1 !important;}
-
 v\: * {behavior : url(#default#VML);}
 /*common*/
 .background text{fill:#666;font-family:'나눔고딕', '돋움', Dotum;font-size:11px}
