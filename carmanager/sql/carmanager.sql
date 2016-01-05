@@ -88,7 +88,7 @@ ALTER TABLE makers
 CREATE TABLE refuel (
 	rno   INTEGER NOT NULL COMMENT '주유번호', -- 주유번호
 	grno  INTEGER NOT NULL COMMENT '내차번호', -- 내차번호
-	date  DATE    NOT NULL COMMENT '주유날짜', -- 주유날짜
+	ref_dt  DATE    NOT NULL COMMENT '주유날짜', -- 주유날짜
 	mile  INTEGER NOT NULL COMMENT '주행거리', -- 주행거리
 	cost  INTEGER NOT NULL COMMENT '주유금액', -- 주유금액
 	liter FLOAT   NULL     COMMENT '주유량' -- 주유량
@@ -166,7 +166,7 @@ ALTER TABLE boards
 -- 내차
 CREATE TABLE garage (
 	grno   INTEGER     NOT NULL COMMENT '내차번호', -- 내차번호
-	mdno   INTEGER     NULL     COMMENT '모델번호', -- 모델번호
+	mdno   INTEGER     NOT NULL COMMENT '모델번호', -- 모델번호
 	mno    INTEGER     NOT NULL COMMENT '회원번호', -- 회원번호
 	c_nick VARCHAR(50) NOT NULL COMMENT '별명', -- 별명
 	mile   INTEGER     NOT NULL COMMENT '주행거리' -- 주행거리
@@ -260,7 +260,7 @@ CREATE TABLE model (
 	trim  VARCHAR(50) NULL     COMMENT '세부모델', -- 세부모델
 	fuel  VARCHAR(10) NOT NULL COMMENT '연료종류', -- 연료종류
 	effi  FLOAT       NOT NULL COMMENT '공인연비', -- 공인연비
-	mkno  INTEGER     NULL     COMMENT '제조사번호' -- 제조사번호
+	mkno  INTEGER     NOT NULL COMMENT '제조사번호' -- 제조사번호
 )
 COMMENT '차종';
 
