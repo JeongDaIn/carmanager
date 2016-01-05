@@ -106,11 +106,17 @@ section {
 
 #topText {
 	font-size: 25px;
-	text-align: center;
+	text-align: left;
 	padding-top: 10px;
-	margin-bottom: 10px;
-  font-weight: bold;
-  color: white;
+	margin-bottom: 15px;
+  font-weight: normal;
+  color: ghostwhite;
+  text-shadow: gray 2px 2px 20px;
+}
+
+.loginBtn {
+    text-shadow: darkgray 1px 1px 10px;
+    font-weight: lighter;
 }
 
 #goJoin {
