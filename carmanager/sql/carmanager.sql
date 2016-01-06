@@ -86,12 +86,12 @@ ALTER TABLE makers
 
 -- 주유기록
 CREATE TABLE refuel (
-	rno   INTEGER NOT NULL COMMENT '주유번호', -- 주유번호
-	grno  INTEGER NOT NULL COMMENT '내차번호', -- 내차번호
-	ref_dt  DATE    NOT NULL COMMENT '주유날짜', -- 주유날짜
-	mile  INTEGER NOT NULL COMMENT '주행거리', -- 주행거리
-	cost  INTEGER NOT NULL COMMENT '주유금액', -- 주유금액
-	liter FLOAT   NULL     COMMENT '주유량' -- 주유량
+	rno    INTEGER NOT NULL COMMENT '주유번호', -- 주유번호
+	grno   INTEGER NOT NULL COMMENT '내차번호', -- 내차번호
+	ref_dt DATE    NOT NULL COMMENT '주유날짜', -- 주유날짜
+	mile   INTEGER NOT NULL COMMENT '주행거리', -- 주행거리
+	cost   INTEGER NOT NULL COMMENT '주유금액', -- 주유금액
+	liter  FLOAT   NULL     COMMENT '주유량' -- 주유량
 )
 COMMENT '주유기록';
 
@@ -153,11 +153,6 @@ CREATE INDEX IX_boards
 CREATE INDEX IX_boards2
 	ON boards( -- 게시물
 		title ASC -- 제목
-	);
-
--- 게시물 인덱스3
-CREATE INDEX IX_boards3
-	ON boards( -- 게시물
 	);
 
 ALTER TABLE boards
