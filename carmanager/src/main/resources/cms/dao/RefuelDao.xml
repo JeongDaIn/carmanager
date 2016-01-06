@@ -12,7 +12,7 @@
     <result column="ref_dt" property="refuelDate"/>
   </resultMap>
 
-  <select id=selectList 
+   
   
   
   
