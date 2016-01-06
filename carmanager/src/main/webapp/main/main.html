@@ -25,7 +25,7 @@ $(window).load(function(){
             swipeStatus:function(event, phase, direction, distance, duration, fingers)
                 {
                     if (phase=="move" && direction =="right") {
-                        $(".container").addClass("open-sidebar");
+                        $(".container").addClass("open-sidebar");                        
                         return false;
                     }
                     if (phase=="move" && direction =="left") {
@@ -76,15 +76,17 @@ $(window).load(function(){
         </div>
       </div>
     
-      <!-- 메뉴 부분 영역 -->    
-      <ul>              
-        <li><a href='#'>&nbsp&nbsp<img src="../img/home.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>MyPage</span></a></li>
-        <li><a href='#'>&nbsp&nbsp<img src="../img/car.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량등록</span></a></li>
-        <li><a href='#'>&nbsp&nbsp<img src="../img/manage.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량관리</span></a></li>
-        <li><a href='#'>&nbsp&nbsp<img src="../img/repaircar.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>정비소</span></a></li>
-        <li><a href='#'>&nbsp&nbsp<img src="../img/match.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>맞춤서비스</span></a></li>
-        <li><a href='#'>&nbsp&nbsp<img src="../img/community.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>커뮤니티</span></a></li>
-      </ul>
+      <!-- 메뉴 부분 영역 -->   
+      <div class="menubarview"> 
+        <ul>              
+          <li><a href='#'>&nbsp&nbsp<img src="../img/home.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>MyPage</span></a></li>
+          <li><a href='#'>&nbsp&nbsp<img src="../img/car.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량등록</span></a></li>
+          <li><a href='#'>&nbsp&nbsp<img src="../img/manage.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>차량관리</span></a></li>
+          <li><a href='#'>&nbsp&nbsp<img src="../img/repaircar.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>정비소</span></a></li>
+          <li><a href='#'>&nbsp&nbsp<img src="../img/match.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>맞춤서비스</span></a></li>
+          <li><a href='#'>&nbsp&nbsp<img src="../img/community.png" class="menu_icon"> &nbsp&nbsp&nbsp<span>커뮤니티</span></a></li>
+        </ul>
+      </div>
         
       <!-- 카피라이터 부분 영역 -->  
       <div class="footerwrapper"> 
@@ -93,7 +95,14 @@ $(window).load(function(){
         </div>
       </div> 
            
-    </div>       
+    </div>  
+    
+    <script>
+    $(function(){
+	  $('.#sidebar').css('height', '100%');
+    });
+    </script>
+         
     <!-- 메뉴바 작업 end -->
   
 
