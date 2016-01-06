@@ -8,12 +8,11 @@
       유지보수에 쉽게 하기 위해서, 그리고 다르게 사용할 경우 resultMap 으로 컬럼과 프로퍼티를 설정하자 -->
   <resultMap type="refuel" id="refuelMap">
     <id column="rno" property="refuelNo"/>
-    <result column="mdno" property="modelNumber"/>
-    <result column="mno" property="memberNumber"/>
-    <result column="c_nick" property="nickName"/>
+    <result column="grno" property="myCarNo"/>
+    <result column="ref_dt" property="refuelDate"/>
   </resultMap>
 
-  <select id=selectList
+  <select id=selectList 
   
   
   
