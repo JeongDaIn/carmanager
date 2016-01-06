@@ -162,6 +162,12 @@ body {
     margin: 0px;    
 }
 
+.logout {
+    position: absolute;
+    top: 160px;
+    left: 150px;
+}
+
 .carbox {
     width: 1024px;
     height: 60px;
