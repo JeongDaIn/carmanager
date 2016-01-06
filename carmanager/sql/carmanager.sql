@@ -155,11 +155,6 @@ CREATE INDEX IX_boards2
 		title ASC -- 제목
 	);
 
--- 게시물 인덱스3
-CREATE INDEX IX_boards3
-	ON boards( -- 게시물
-	);
-
 ALTER TABLE boards
 	MODIFY COLUMN bno INTEGER NOT NULL AUTO_INCREMENT COMMENT '게시물번호';
 
