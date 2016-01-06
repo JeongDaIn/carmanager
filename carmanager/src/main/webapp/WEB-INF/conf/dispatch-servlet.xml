@@ -24,15 +24,14 @@
 	</bean>
   -->
 	
-   <!--  
    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
     <property name="viewResolvers">
         <list>
             <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
             <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
                 <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-                <property name="prefix" value="/WEB-INF/jsp/"/>
-                <property name="suffix" value=".jsp"/>
+                <property name="prefix" value=""/>
+                <property name="suffix" value=".html"/>
             </bean>
         </list>
     </property>
@@ -42,7 +41,7 @@
         </list>
     </property>
     </bean>
-  -->
+
 	<!-- 
     <mvc:interceptors>
     <mvc:interceptor>
