@@ -1,5 +1,7 @@
 package cms.controller;
 
+import java.util.List;
+
 import javax.servlet.ServletContext;
 
 import org.apache.log4j.Logger;
@@ -23,7 +25,10 @@ public class GarageController {
     log.debug("message");
     Garage garage = garageDao.selectOne(no);
     log.debug(garage.getNickName());
-    
+    List<Garage> garages = garageDao.selectList(no);
+    for (Garage g : garages) {
+    	log.debug(g.getNickName());
+    }
     return "main";
   }
   

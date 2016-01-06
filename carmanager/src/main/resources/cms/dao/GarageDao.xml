@@ -23,4 +23,10 @@
   
   
   
+  <select id="selectList" resultMap="garageMap" parameterType="int">
+  	select
+      c_nick
+    from garage
+    where mno = #{no}
+  </select>
 </mapper>

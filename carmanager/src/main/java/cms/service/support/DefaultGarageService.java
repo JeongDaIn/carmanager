@@ -1,5 +1,7 @@
 package cms.service.support;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import cms.dao.GarageDao;
@@ -14,5 +16,8 @@ public class DefaultGarageService implements GarageService {
     return garageDao.selectOne(no);
   }
   
-  
+ @Override
+ public List<Garage> alldisplay(int no) {
+	return garageDao.selectList(no);
+}
 }
