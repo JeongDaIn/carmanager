@@ -41,11 +41,11 @@
     <p>회원이라면 <span id="now">지금</span> 들어오세요.</p> 
     <p>
         <label for="login">Email</label>
-        <input type="text" name="login" placeholder="이메일" required>
+        <input type="text" name="login" placeholder="이메일" required id="femail">
     </p>
     <p>
         <label for="password">Password</label>
-        <input type="password" name='password' placeholder="비밀번호" required> 
+        <input type="password" name='password' placeholder="비밀번호" required id="fpassword"> 
     </p>
 
     <div>
@@ -72,6 +72,27 @@
   function goMain() {
   		window.location.href="../main/main.html";
   }
+  
+  
 </script> 
+
+<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+<script>
+// 등록 버튼을 위한 이벤트 리스너 추가하기
+$('#loginBtn').click(function(event) {
+	$.post('localhost:8080/carmanager/main/main.do', {
+		email: $('#femail').val(),
+		password: $('#fpassword').val()		
+	}, function(resultObj) {
+		var ajaxResult = resultObj.ajaxResult;
+		if (ajaxResult.status == "success") {
+      location.href = "main.html";
+    } else {
+      alert("로그인에 실패했습니다.");
+    }
+	}, 'json');
+});
+</script>
+
 </body>
 </html>
