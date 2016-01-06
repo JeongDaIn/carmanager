@@ -16,7 +16,7 @@ button.jqTransformButton {
 	padding: 0px;
 	border: none;
 	background-color: transparent;
-	cursor: pointer;
+	cursor: poinxter;
 	overflow: visible;
 	font-family: Arial;
 }
@@ -255,7 +255,7 @@ a.jqTransformChecked { background-position: center bottom;}
 	border: 1px solid black;
 	
 	height: 28px;
-	background: url('../img/ico_select_arrow.png') no-repeat top right white;
+	background: url('../img/main/ico_select_arrow.png') no-repeat top right white;
 	float:left;
 
 	margin-top:8px;
@@ -264,7 +264,7 @@ a.jqTransformChecked { background-position: center bottom;}
 .jqTransformSelectWrapper.select {
 	
 	
-	background: url('../img/ico_select_arrow.png') no-repeat top right #FFFFFF;
+	background: url('../img/main/ico_select_arrow.png') no-repeat top right #FFFFFF;
 }
 
 
