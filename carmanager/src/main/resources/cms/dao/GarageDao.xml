@@ -13,7 +13,12 @@
     <result column="c_nick" property="nickName"/>
   </resultMap>
 
-  <select id=selectList
+  <select id="selectOne" resultMap="garageMap" parameterType="int">
+    select
+      c_nick
+    from garage
+    where mno = #{no}
+  </select>
   
   
   

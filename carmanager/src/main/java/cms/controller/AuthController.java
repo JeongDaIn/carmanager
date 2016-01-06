@@ -19,7 +19,7 @@ public class AuthController {
   
   @RequestMapping(value="login", method=RequestMethod.GET)
   public String loginform() {
-    return "auth/LoginForm";
+    return "login";
   }
   
   @RequestMapping(value="login", method=RequestMethod.POST)
