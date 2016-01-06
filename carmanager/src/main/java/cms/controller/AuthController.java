@@ -44,7 +44,7 @@ public class AuthController {
     
     if (member == null) {
       session.invalidate();
-      return "auth/LoginFail";
+      return "LoginFail";
     }
     
     session.setAttribute("loginUser", member);
