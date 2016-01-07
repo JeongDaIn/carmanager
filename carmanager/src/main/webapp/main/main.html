@@ -117,11 +117,12 @@ $(window).load(function(){
         </div>
       </div>      
       
-     
+     <!-- 자동차 선택 -->
       <div id="select_container" class="selectcar">
         <select id="myCarList" class="m_select select01"></select>
       </div>
       
+      <!-- 로그아웃 -->
       <div class="logout">
         <button id="logout" type="button">로그아웃</button>
       </div>
@@ -220,10 +221,12 @@ $(window).load(function(){
 <script>
 <!-- 연비 분석 관련 스크립트 -->
 $.getJSON('list.do', function(resultObj) {
-var selectcar = $("#myCarList")
-$("<option>").html("팥죽이").appendTo(selectcar);
-$("<option>").html("팥빵이").appendTo(selectcar);
-$("<option>").html("일탈이").appendTo(selectcar);
+  alert("들어옴?");
+var selectcar = $("#myCarList");
+for (var garage of resultObj.data) {
+   /* alert(garage.nickName); */
+   $("<option>").html( + garage.nickName + ).appendTo(selectcar);
+}
  
 });
 var options = {
