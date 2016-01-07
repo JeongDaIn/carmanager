@@ -7,6 +7,7 @@ public class AjaxResult {
   public AjaxResult() {
 
   }
+  
   public AjaxResult(String status, Object data) {
     this.status = status;
     this.data = data;
