@@ -23,6 +23,7 @@ public class GarageController {
   
   @RequestMapping("list")
   public Object carList() throws Exception {
+  	System.out.println("들어간다 ");
   	int no = 2;
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
