@@ -1,5 +1,6 @@
 package cms.controller;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -20,15 +21,20 @@ public class GarageController {
   @Autowired GarageService garageService;
   @Autowired ServletContext servletContext;
   
-  @RequestMapping("detail")
-  public Object detail(int no) throws Exception {
+  @RequestMapping("list")
+  public Object carList(int no) throws Exception {
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
     for (Garage g : garages) {
       log.debug(g.getNickName());
     }
     
-    return "main";
+    HashMap<String, Object> resultMap = new HashMap<>();
+    resultMap.put("status", "success");
+    resultMap.put("data", garages);
+    
+    return resultMap;  
+
   }
   
 }

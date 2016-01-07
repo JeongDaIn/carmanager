@@ -123,8 +123,13 @@ $(window).load(function(){
       </div>
       
       <div class="logout">
-        <button type="button" >로그아웃</button>
+        <button id="logout" type="button">로그아웃</button>
       </div>
+      <script type="text/javascript">
+      $('#logout').click(function(event) {
+        location.href = "../auth/login.html";
+      });
+      </script>
     
     
     <!-- 연비 분석 정보 표출 영역 -->
@@ -214,6 +219,9 @@ $(window).load(function(){
   </div> <!-- container end -->
 <script>
 <!-- 연비 분석 관련 스크립트 -->
+$.getJSON('main/list.do', function(resultObj) {
+  alert("하하하하");
+});
 var selectcar = $("#myCarList")
 $("<option>").html("팥죽이").appendTo(selectcar);
 $("<option>").html("팥빵이").appendTo(selectcar);
