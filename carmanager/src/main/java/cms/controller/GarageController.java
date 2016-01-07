@@ -25,7 +25,6 @@ public class GarageController {
   public Object carList() throws Exception {
 
     int no = 1;
-
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
     for (Garage g : garages) {
