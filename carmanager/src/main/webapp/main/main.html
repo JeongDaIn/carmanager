@@ -119,7 +119,12 @@ $(window).load(function(){
       
      <!-- 자동차 선택 -->
       <div id="select_container" class="selectcar">
-        <select id="myCarList" class="m_select select01"></select>
+        <select id="myCarList">
+		  <!--  <option value="01">팥죽</option>
+		   <option value="02">찐빵</option>
+		   <option value="03">팥빵</option>
+		   <option value="04">호빵</option> -->
+        </select>
       </div>
       
       <!-- 로그아웃 -->
@@ -222,20 +227,18 @@ $(window).load(function(){
 <!-- 연비 분석 관련 스크립트 -->
 $.getJSON('list.do', function(resultObj) {
   alert("들어옴?");
-var selectcar = $("#myCarList");
-for (var garage of resultObj.data) {
-   /* alert(garage.nickName); */
-   $("<option>").html( + garage.nickName + ).appendTo(selectcar);
-}
+  
+ var selectCar = $("#myCarList");
+ for (var garage of resultObj.data) {
+   $("#myCarList")
+     .html("<option value=" + garage.memberNo +">" + garage.nickName)
+       .appendTo(selectCar);
+ }
 
 });
-var selectcar = $("#myCarList")
-$("<option>").html("팥죽이").appendTo(selectcar);
-$("<option>").html("팥빵이").appendTo(selectcar);
-$("<option>").html("일탈이").appendTo(selectcar);
->>>>>>> d362c525c26a9322e8b0b6f64c433999c9054579
- 
-});
+</script>
+
+<script>
 var options = {
      'legend':{names: ['01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03']},
      'dataset':{
