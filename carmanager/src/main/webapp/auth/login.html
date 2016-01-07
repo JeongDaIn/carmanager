@@ -59,7 +59,7 @@
     <p></p>
 
     <p>
-      <input class="loginBtn" type="button" value="시작하기" onclick="goMain()">
+      <input id="loginBtn" type="button" value="시작하기" onclick="goMain()">
     </p>       
   </form>
   
@@ -80,6 +80,20 @@
 <script>
 // 등록 버튼을 위한 이벤트 리스너 추가하기
 $('#loginBtn').click(function(event) {
+	$.post('ajax/login.do', {
+		email: $('#femail').val(),
+		password: $('#fpassword').val()		
+	}, function(resultObj) {
+		var ajaxResult = resultObj.ajaxResult;
+		if (ajaxResult.status == "success") {
+      location.href = "main.html";
+    } else {
+      alert("로그인에 실패했습니다.");
+    }
+	}, 'json');
+});
+/*
+$('#loginBtn').click(function(event) {
 	$.post('localhost:8080/carmanager/main/main.do', {
 		email: $('#femail').val(),
 		password: $('#fpassword').val()		
@@ -92,6 +106,7 @@ $('#loginBtn').click(function(event) {
     }
 	}, 'json');
 });
+*/
 </script>
 
 </body>
