@@ -22,7 +22,9 @@ public class GarageController {
   @Autowired ServletContext servletContext;
   
   @RequestMapping("list")
-  public Object carList(int no) throws Exception {
+  public Object carList() throws Exception {
+    
+    int no = 1;
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
     for (Garage g : garages) {
