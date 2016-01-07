@@ -229,12 +229,39 @@ $(window).load(function(){
 
 var selectcar = $("#myCarList");
 $.getJSON('list.do', function(resultObj) {
-//  alert("들어옴?");
-for (var garage of resultObj.data) {
-//  alert(garage.nickName);
-$("<option>").html(garage.nickName).appendTo(selectcar);
-}
-});
+	for (var garage of resultObj.data) {
+		$("<option>").html(garage.nickName).appendTo(selectcar);
+	}
+	
+ <!-- 주유 금액 내역 정보 표출 영역 -->
+ var options = {
+       'legend': {
+           names: ['1월`','2월','3월'],
+           hrefs: [
+             
+           ]
+       },
+       'dataset': {
+           title: '최근 3개월 주유금액 비교',
+           values: [
+               [34,15], [40,23], [20,16]
+               ],
+           colorset: ['#DC143C', '#FF8C00', "#30a1ce"],
+           fields: ['회원평균', '본인평균']
+       },
+       
+       
+       'chartDiv': 'Nwagon',
+       'chartType': 'multi_column',
+       'chartSize': { width: 500, height: 250 },
+       'maxValue': 50,
+       'increment': 10,
+       'leftOffsetValue': 35,
+       'bottomOffsetValue': 30
+   };
+   Nwagon.chart(options); 
+   
+
 
 var options = {
      'legend':{names: ['01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03']},
@@ -256,31 +283,9 @@ var options = {
  };
 
  Nwagon.chart(options);
-<!-- 주유 금액 내역 정보 표출 영역 -->
-   var options = {
-       'legend': {
-           names: ['1월`','2월','3월'],
-           hrefs: [
-             
-           ]
-       },
-       'dataset': {
-           title: '최근 3개월 주유금액 비교',
-           values: [
-               [34,15], [40,23], [20,16]
-               ],
-           colorset: ['#DC143C', '#FF8C00', "#30a1ce"],
-           fields: ['회원평균', '본인평균']
-       },
-       'chartDiv': 'Nwagon',
-       'chartType': 'multi_column',
-       'chartSize': { width: 500, height: 250 },
-       'maxValue': 50,
-       'increment': 10,
-       'leftOffsetValue': 35,
-       'bottomOffsetValue': 30
-   };
-   Nwagon.chart(options); 
+ 
+});
+
  </script>
 </body>
 </html>

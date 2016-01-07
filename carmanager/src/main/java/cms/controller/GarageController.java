@@ -36,7 +36,9 @@ public class GarageController {
     HashMap<String, Object> resultMap = new HashMap<>();
     resultMap.put("status", "success");
     resultMap.put("data", garages);
-    //!!
+    resultMap.put("monthcost", garages);
+    
+    
     return resultMap;  
 
   }

@@ -7,5 +7,4 @@ import cms.domain.Garage;
 public interface GarageService {
   List<Garage> listAll(int no);
   
-  
 }
