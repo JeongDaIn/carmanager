@@ -223,22 +223,19 @@ $(window).load(function(){
     <!-- 메인 표출 정보 작업 end -->  
 
   </div> <!-- container end -->
+
+
 <script>
-<!-- 연비 분석 관련 스크립트 -->
+
+var selectcar = $("#myCarList");
 $.getJSON('list.do', function(resultObj) {
-  alert("들어옴?");
-  
- var selectCar = $("#myCarList");
- for (var garage of resultObj.data) {
-   $("#myCarList")
-     .html("<option value=" + garage.memberNo +">" + garage.nickName)
-       .appendTo(selectCar);
- }
-
+//  alert("들어옴?");
+for (var garage of resultObj.data) {
+//  alert(garage.nickName);
+$("<option>").html(garage.nickName).appendTo(selectcar);
+}
 });
-</script>
 
-<script>
 var options = {
      'legend':{names: ['01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03', '01-03']},
      'dataset':{
