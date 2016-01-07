@@ -23,8 +23,9 @@ public class GarageController {
   
   @RequestMapping("list")
   public Object carList() throws Exception {
-    
+
     int no = 1;
+
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
     for (Garage g : garages) {
@@ -34,7 +35,7 @@ public class GarageController {
     HashMap<String, Object> resultMap = new HashMap<>();
     resultMap.put("status", "success");
     resultMap.put("data", garages);
-    
+    //!!
     return resultMap;  
 
   }
