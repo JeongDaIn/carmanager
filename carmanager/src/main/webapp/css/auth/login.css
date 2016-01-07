@@ -154,7 +154,7 @@ body {
 
 .form-4 input[type=text]:hover,
 .form-4 input[type=password]:hover,
-.form-4 input[type=button]:hover {
+.form-4 input[type=submit]:hover {
     border-color: white;
 }
 
@@ -172,7 +172,7 @@ body {
     outline: 1px solid white;
 }
 
-.form-4 input[type=button] {
+.form-4 input[type=submit] {
     width: 100%;
     padding: 8px 5px;
     
@@ -200,11 +200,11 @@ body {
     font-family: 'Raleway', 'Lato', Arial, sans-serif;
 }
 
-.form-4 input[type=button]:hover {
+.form-4 input[type=submit]:hover {
     background: red;
 }
 
-.no-boxshadow .form-4 input[type=button]:hover {
+.no-boxshadow .form-4 input[type=submit]:hover {
     background: #594642;
 }
 
