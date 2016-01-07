@@ -1,4 +1,4 @@
-package cms.controller;
+/*package cms.controller;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -58,3 +58,4 @@ public class AuthController {
     return "redirect:login.do";
   }
 }
+*/

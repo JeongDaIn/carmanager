@@ -36,7 +36,7 @@
     </div>
   </div>
   <form id="null"></form>
-  <form class="form-4">
+  <form class="form-4" method="POST">
     <div id="topText"><span id="textMycar">내 차를 부탁해</span> 시작하기</div>
     <p>회원이라면 <span id="now">지금</span> 들어오세요.</p> 
     <p>
@@ -59,7 +59,7 @@
     <p></p>
 
     <p>
-      <input id="loginBtn" type="button" value="시작하기" onclick="goMain()">
+      <input id="loginBtn" type="submit" value="시작하기">
     </p>       
   </form>
   
@@ -69,10 +69,6 @@
   <script type="text/javascript" src="../js/auth/jquery.placeholder.min.js"></script>
   <script type="text/javascript" src="../js/auth/modernizr.custom.63321.js"></script>
   <script type="text/javascript">
-  function goMain() {
-  		window.location.href="../main/main.html";
-  }
-  
   
 </script> 
 
@@ -86,12 +82,12 @@ $('#loginBtn').click(function(event) {
 	}, function(resultObj) {
 		var ajaxResult = resultObj.ajaxResult;
 		if (ajaxResult.status == "success") {
-      location.href = "main.html";
-    } else {
-      alert("로그인에 실패했습니다.");
-    }
+      location.href = "../main/main.html";
 	}, 'json');
 });
+
+$("[name=login]").attr("requried", true);
+$("[name=password]").attr("requried", true);
 /*
 $('#loginBtn').click(function(event) {
 	$.post('localhost:8080/carmanager/main/main.do', {
