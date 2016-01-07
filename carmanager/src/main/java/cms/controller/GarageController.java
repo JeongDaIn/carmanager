@@ -24,7 +24,8 @@ public class GarageController {
   @RequestMapping("list")
   public Object carList() throws Exception {
 
-    int no = 1;
+  	System.out.println("들어간다 ");
+		int no = 1;
 
     log.debug("message");
     List<Garage> garages = garageService.listAll(no);
