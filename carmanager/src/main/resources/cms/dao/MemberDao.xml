@@ -9,9 +9,10 @@
     <id column="mno" property="memberNo"/>
     <result column="pwd" property="password"/>
     <result column="nick" property="nickName"/>
+    <result column="photo" property="memberPhoto"/>
   </resultMap>
   
-  <select id="selectOneByEmailPassowrd" resultType="member" parameterType="map">
+  <select id="selectOneByEmailPassword" resultType="member" parameterType="map">
     select mno, email, nick, photo, grade
     from members
     where email=#{email} and pwd=sha1(#{password})
